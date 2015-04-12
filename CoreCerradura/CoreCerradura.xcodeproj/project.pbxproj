@@ -10,6 +10,7 @@
 		6E4642F41AD9E045005BDBA7 /* CoreCerradura.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E4642F31AD9E045005BDBA7 /* CoreCerradura.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6E4642FA1AD9E045005BDBA7 /* CoreCerradura.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4642EE1AD9E045005BDBA7 /* CoreCerradura.framework */; };
 		6E4643011AD9E045005BDBA7 /* CoreCerraduraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4643001AD9E045005BDBA7 /* CoreCerraduraTests.swift */; };
+		6E4643201AD9E953005BDBA7 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6E46431E1AD9E953005BDBA7 /* Model.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		6E4642F91AD9E045005BDBA7 /* CoreCerraduraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreCerraduraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E4642FF1AD9E045005BDBA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E4643001AD9E045005BDBA7 /* CoreCerraduraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreCerraduraTests.swift; sourceTree = "<group>"; };
+		6E46431F1AD9E953005BDBA7 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 		6E4642E41AD9E045005BDBA7 = {
 			isa = PBXGroup;
 			children = (
+				6E46431D1AD9E10A005BDBA7 /* Frameworks */,
 				6E4642F01AD9E045005BDBA7 /* CoreCerradura */,
 				6E4642FD1AD9E045005BDBA7 /* CoreCerraduraTests */,
 				6E4642EF1AD9E045005BDBA7 /* Products */,
@@ -72,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				6E4642F31AD9E045005BDBA7 /* CoreCerradura.h */,
+				6E46431E1AD9E953005BDBA7 /* Model.xcdatamodeld */,
 				6E4642F11AD9E045005BDBA7 /* Supporting Files */,
 			);
 			path = CoreCerradura;
@@ -100,6 +104,13 @@
 				6E4642FF1AD9E045005BDBA7 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6E46431D1AD9E10A005BDBA7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,6 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E4643201AD9E953005BDBA7 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +422,19 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6E46431E1AD9E953005BDBA7 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6E46431F1AD9E953005BDBA7 /* Model.xcdatamodel */,
+			);
+			currentVersion = 6E46431F1AD9E953005BDBA7 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 6E4642E51AD9E045005BDBA7 /* Project object */;
 }
