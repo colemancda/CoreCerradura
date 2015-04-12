@@ -1,11 +1,36 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7549" systemVersion="14C1514" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Action" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="lock" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Lock" inverseName="actions" inverseEntity="Lock" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="actions" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="Lock" syncable="YES">
+        <attribute name="archived" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="online" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="secret" optional="YES" attributeType="String" minValueString="10" syncable="YES"/>
+        <relationship name="actions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Action" inverseName="lock" inverseEntity="Action" syncable="YES"/>
+        <relationship name="permissions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Permission" inverseName="lock" inverseEntity="Permission" syncable="YES"/>
+    </entity>
+    <entity name="Permission" syncable="YES">
+        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="lock" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Lock" inverseName="permissions" inverseEntity="Lock" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="permissions" inverseEntity="User" syncable="YES"/>
+    </entity>
     <entity name="User" syncable="YES">
+        <attribute name="archived" optional="YES" attributeType="Boolean" defaultValueString="YES" syncable="YES"/>
         <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="emailValidated" optional="YES" attributeType="Boolean" defaultValueString="0" syncable="YES"/>
         <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="actions" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Action" inverseName="user" inverseEntity="Action" syncable="YES"/>
+        <relationship name="permissions" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Permission" inverseName="user" inverseEntity="Permission" syncable="YES"/>
     </entity>
     <elements>
-        <element name="User" positionX="-63" positionY="-18" width="128" height="90"/>
+        <element name="User" positionX="-63" positionY="-18" width="128" height="150"/>
+        <element name="Permission" positionX="-54" positionY="27" width="128" height="90"/>
+        <element name="Lock" positionX="-36" positionY="36" width="128" height="120"/>
+        <element name="Action" positionX="-27" positionY="72" width="128" height="105"/>
     </elements>
 </model>
