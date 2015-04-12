@@ -9,7 +9,7 @@
     <entity name="Lock" syncable="YES">
         <attribute name="archived" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
         <attribute name="created" attributeType="Date" syncable="YES"/>
-        <attribute name="online" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="online" transient="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
         <attribute name="secret" attributeType="String" minValueString="10" syncable="YES"/>
         <relationship name="actions" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Action" inverseName="lock" inverseEntity="Action" syncable="YES"/>
         <relationship name="permissions" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Permission" inverseName="lock" inverseEntity="Permission" syncable="YES"/>
