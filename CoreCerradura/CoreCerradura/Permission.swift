@@ -13,6 +13,9 @@ public class Permission: NSManagedObject {
 
     public @NSManaged var active: NSNumber
     public @NSManaged var created: NSDate
+    
+    /* The date this permission becomes invalid. Not applicable
+    public @NSManaged var endDate: NSDate?
     public @NSManaged var type: String
     public @NSManaged var lock: Lock
     public @NSManaged var user: User
