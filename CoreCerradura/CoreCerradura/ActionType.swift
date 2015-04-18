@@ -9,8 +9,11 @@
 /* Specifies the type of action. */
 public enum ActionType: String {
     
-    /* A new lock / user / permission was created. */
+    /* A new entity was created. */
     public case New = "new"
+    
+    /* An entity has been archived / invalidated. */
+    public case Archived = "archived"
     
     /* A lock was unlocked. */
     public case Unlocked = "unlocked"

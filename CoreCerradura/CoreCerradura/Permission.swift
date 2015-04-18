@@ -9,21 +9,37 @@
 import Foundation
 import CoreData
 
+/* A permission encapsulates access control for a specified lock and user. */
 public class Permission: NSManagedObject {
+    
+    // MARK: - Properties
 
-    public @NSManaged var active: NSNumber
+    // MARK: Attributes
+    
+    /* Whether this entity is archived or not. Archived entities are basically deleted, but still stored for historical purposes. */
+    public @NSManaged var archived: NSNumber
+    
+    /* Date the permission was created. */
     public @NSManaged var created: NSDate
     
-    /* The date this permission becomes invalid. Not applicable
-    public @NSManaged var endDate: NSDate?
+    /* The type of permission. Raw value for PermissionType. */
     public @NSManaged var type: String
+    
+    /* The date this permission becomes invalid. Not applicable to owner permissions. */
+    public @NSManaged var endDate: NSDate?
+    
+    // MARK: Relationships
+    
+    /* The lock this permission is granting access for. */
     public @NSManaged var lock: Lock
+    
+    /* The user this permssion is granting access to. */
     public @NSManaged var user: User
     
-    // MARK - Custom Accessors
+    // MARK: - Custom Accessors
     
-    public var isActive: Bool {
+    public var isArchived: Bool {
         
-        return self.active.boolValue
+        return self.archived.boolValue
     }
 }

@@ -269,8 +269,7 @@
 				6E9821321AE2D5B400D393DF /* User.swift */,
 				6E9821301AE2D5B400D393DF /* Action.swift */,
 				6E98212E1AE2D5B400D393DF /* Permission.swift */,
-				6E9821361AE2D67000D393DF /* PermissionType.swift */,
-				6E9821381AE2D6C900D393DF /* ActionType.swift */,
+				6E98215B1AE2F79200D393DF /* Enums */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -330,6 +329,15 @@
 				6E4643711ADAE2F1005BDBA7 /* iOSSwift.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		6E98215B1AE2F79200D393DF /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				6E9821361AE2D67000D393DF /* PermissionType.swift */,
+				6E9821381AE2D6C900D393DF /* ActionType.swift */,
+			);
+			name = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -9,22 +9,36 @@
 import Foundation
 import CoreData
 
+/* Entity representing an instance of a physical lock. */
 public class Lock: NSManagedObject {
 
+    /* Whether this entity is archived or not. Archived entities are basically deleted, but still stored for historical purposes. */
     public @NSManaged var archived: NSNumber
+    
+    /* Date the lock was created. */
     public @NSManaged var created: NSDate
+    
+    /* Whether the lock is currently connected to the server. */
     public @NSManaged var online: NSNumber
+    
+    /* The lock´s secret. Only the owner can see this. */
     public @NSManaged var secret: String
-    public @NSManaged var actions: NSSet?
-    public @NSManaged var permissions: NSSet?
     
-    // MARK - Custom Accessors
+    /* Actions involving this lock. */
+    public @NSManaged var actions: Set<Action>?
     
+    /* Permissions granted for this lock. */
+    public @NSManaged var permissions: Set<Permission>?
+    
+    // MARK: - Custom Accessors
+    
+    /* Custom accessor for 'archived' attribute. */
     public var isArchived: Bool {
         
         return self.archived.boolValue
     }
     
+    /* Custom accessor for 'online' attribute. */
     public var isOnline: Bool {
         
         return self.online.boolValue
