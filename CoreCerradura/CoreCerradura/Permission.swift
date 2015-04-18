@@ -36,6 +36,15 @@ public class Permission: NSManagedObject {
     /* The user this permssion is granting access to. */
     public @NSManaged var user: User
     
+    /* Permissions derived from this permission. */
+    public @NSManaged var derivedPermissions: Set<Permisssion>?
+    
+    /* Permission this permission was derived from. */
+    public @NSManaged var parentPermission: Permission?
+    
+    /* Actions involving this permission. */
+    public @NSManaged var actions: Set<Action>?
+    
     // MARK: - Custom Accessors
     
     public var isArchived: Bool {
