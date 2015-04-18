@@ -9,11 +9,12 @@
 import Foundation
 import CoreData
 
+/* Encapsulates an action. Used for lock and server activity history. */
 public class Action: NSManagedObject {
 
     public @NSManaged var date: NSDate
     public @NSManaged var type: String
-    public @NSManaged var lock: Lock
-    public @NSManaged var user: User
+    public @NSManaged var lock: Lock?
+    public @NSManaged var user: User?
     
 }

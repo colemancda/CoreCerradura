@@ -17,6 +17,20 @@ public class User: NSManagedObject {
     public @NSManaged var emailValidated: NSNumber
     public @NSManaged var password: String
     public @NSManaged var username: String
-    public @NSManaged var actions: NSSet
-    public @NSManaged var permissions: NSSet
+    public @NSManaged var actions: NSSet?
+    public @NSManaged var permissions: NSSet?
+    
+    // MARK - Custom Accessors
+    
+    public var isArchived: Bool {
+        
+        return self.archived.boolValue
+    }
+    
+    public var isEmailValidated: Bool {
+        
+        return self.isEmailValidated.boolValue
+    }
+    
+    
 }

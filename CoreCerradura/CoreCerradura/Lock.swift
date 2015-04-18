@@ -15,7 +15,18 @@ public class Lock: NSManagedObject {
     public @NSManaged var created: NSDate
     public @NSManaged var online: NSNumber
     public @NSManaged var secret: String
-    public @NSManaged var actions: NSSet
-    public @NSManaged var permissions: NSSet
-
+    public @NSManaged var actions: NSSet?
+    public @NSManaged var permissions: NSSet?
+    
+    // MARK - Custom Accessors
+    
+    public var isArchived: Bool {
+        
+        return self.archived.boolValue
+    }
+    
+    public var isOnline: Bool {
+        
+        return self.online.boolValue
+    }
 }

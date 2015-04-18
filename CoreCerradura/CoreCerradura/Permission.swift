@@ -16,4 +16,11 @@ public class Permission: NSManagedObject {
     public @NSManaged var type: String
     public @NSManaged var lock: Lock
     public @NSManaged var user: User
+    
+    // MARK - Custom Accessors
+    
+    public var isActive: Bool {
+        
+        return self.active.boolValue
+    }
 }
