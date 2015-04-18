@@ -17,6 +17,12 @@
 		6E4643771ADAE320005BDBA7 /* ExSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E46434C1ADAE2E2005BDBA7 /* ExSwift.framework */; };
 		6E4643781ADAE320005BDBA7 /* NetworkObjects.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E46432A1ADADCD8005BDBA7 /* NetworkObjects.framework */; };
 		6E4643791ADAE320005BDBA7 /* RoutingHTTPServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4643541ADAE2E2005BDBA7 /* RoutingHTTPServer.framework */; };
+		6E98212F1AE2D5B400D393DF /* Permission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E98212E1AE2D5B400D393DF /* Permission.swift */; };
+		6E9821311AE2D5B400D393DF /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9821301AE2D5B400D393DF /* Action.swift */; };
+		6E9821331AE2D5B400D393DF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9821321AE2D5B400D393DF /* User.swift */; };
+		6E9821351AE2D5B500D393DF /* Lock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9821341AE2D5B500D393DF /* Lock.swift */; };
+		6E9821371AE2D67000D393DF /* PermissionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9821361AE2D67000D393DF /* PermissionType.swift */; };
+		6E9821391AE2D6C900D393DF /* ActionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9821381AE2D6C900D393DF /* ActionType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -155,6 +161,12 @@
 		6E4643401ADAE2E2005BDBA7 /* CocoaHTTPServer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CocoaHTTPServer.xcodeproj; path = /Users/Coleman/Developer/MyProjects/CerraduraServer/CoreCerradura/NetworkObjects/RoutingHTTPServer/Framework/RoutingHTTPServer/../../External/CocoaHTTPServer/Framework/CocoaHTTPServer/CocoaHTTPServer.xcodeproj; sourceTree = "<absolute>"; };
 		6E4643571ADAE2EB005BDBA7 /* CocoaAsyncSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CocoaAsyncSocket.xcodeproj; path = /Users/Coleman/Developer/MyProjects/CerraduraServer/CoreCerradura/NetworkObjects/RoutingHTTPServer/External/CocoaHTTPServer/Framework/CocoaHTTPServer/../../CocoaAsyncSocket/Framework/CocoaAsyncSocket/CocoaAsyncSocket.xcodeproj; sourceTree = "<absolute>"; };
 		6E4643601ADAE2F1005BDBA7 /* Lumberjack.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Lumberjack.xcodeproj; path = /Users/Coleman/Developer/MyProjects/CerraduraServer/CoreCerradura/NetworkObjects/RoutingHTTPServer/External/CocoaHTTPServer/CocoaAsyncSocket/Framework/CocoaAsyncSocket/../../CocoaLumberjack/Framework/Desktop/Lumberjack.xcodeproj; sourceTree = "<absolute>"; };
+		6E98212E1AE2D5B400D393DF /* Permission.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Permission.swift; sourceTree = "<group>"; };
+		6E9821301AE2D5B400D393DF /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		6E9821321AE2D5B400D393DF /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		6E9821341AE2D5B500D393DF /* Lock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lock.swift; sourceTree = "<group>"; };
+		6E9821361AE2D67000D393DF /* PermissionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermissionType.swift; sourceTree = "<group>"; };
+		6E9821381AE2D6C900D393DF /* ActionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -253,6 +265,12 @@
 		6E4643211ADADB1A005BDBA7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6E9821341AE2D5B500D393DF /* Lock.swift */,
+				6E9821321AE2D5B400D393DF /* User.swift */,
+				6E9821301AE2D5B400D393DF /* Action.swift */,
+				6E98212E1AE2D5B400D393DF /* Permission.swift */,
+				6E9821361AE2D67000D393DF /* PermissionType.swift */,
+				6E9821381AE2D6C900D393DF /* ActionType.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -556,7 +574,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E9821331AE2D5B400D393DF /* User.swift in Sources */,
+				6E9821351AE2D5B500D393DF /* Lock.swift in Sources */,
+				6E98212F1AE2D5B400D393DF /* Permission.swift in Sources */,
+				6E9821311AE2D5B400D393DF /* Action.swift in Sources */,
+				6E9821371AE2D67000D393DF /* PermissionType.swift in Sources */,
 				6E4643201AD9E953005BDBA7 /* Model.xcdatamodeld in Sources */,
+				6E9821391AE2D6C900D393DF /* ActionType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -671,6 +695,7 @@
 		6E4643051AD9E045005BDBA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -682,12 +707,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		6E4643061AD9E045005BDBA7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
