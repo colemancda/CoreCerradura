@@ -13,22 +13,22 @@ import CoreData
 public class Lock: NSManagedObject {
 
     /* Whether this entity is archived or not. Archived entities are basically deleted, but still stored for historical purposes. */
-    public @NSManaged var archived: NSNumber
+    @NSManaged public var archived: NSNumber
     
     /* Date the lock was created. */
-    public @NSManaged var created: NSDate
+    @NSManaged public var created: NSDate
     
     /* Whether the lock is currently connected to the server. */
-    public @NSManaged var online: NSNumber
+    @NSManaged public var online: NSNumber
     
     /* The lock´s secret. Only the owner can see this. */
-    public @NSManaged var secret: String
+    @NSManaged public var secret: String
     
     /* Actions involving this lock. */
-    public @NSManaged var actions: Set<Action>?
+    @NSManaged public var actions: Set<Action>?
     
     /* Permissions granted for this lock. */
-    public @NSManaged var permissions: Set<Permission>?
+    @NSManaged public var permissions: Set<Permission>?
     
     // MARK: - Custom Accessors
     

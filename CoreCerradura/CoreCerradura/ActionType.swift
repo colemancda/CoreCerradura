@@ -10,11 +10,11 @@
 public enum ActionType: String {
     
     /* A new entity was created. */
-    public case New = "new"
+    case New = "new"
     
     /* An entity has been archived / invalidated. */
-    public case Archived = "archived"
+    case Archived = "archived"
     
     /* A lock was unlocked. */
-    public case Unlocked = "unlocked"
+    case Unlocked = "unlocked"
 }

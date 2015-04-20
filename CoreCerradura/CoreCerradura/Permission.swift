@@ -17,33 +17,42 @@ public class Permission: NSManagedObject {
     // MARK: Attributes
     
     /* Whether this entity is archived or not. Archived entities are basically deleted, but still stored for historical purposes. */
-    public @NSManaged var archived: NSNumber
+    @NSManaged public var archived: NSNumber
     
     /* Date the permission was created. */
-    public @NSManaged var created: NSDate
+    @NSManaged public var created: NSDate
     
-    /* The type of permission. Raw value for PermissionType. */
-    public @NSManaged var type: String
+    /* The date this permission becomes invalid. Not applicable for owner permissions. */
+    @NSManaged public var endDate: NSDate?
     
-    /* The date this permission becomes invalid. Not applicable to owner permissions. */
-    public @NSManaged var endDate: NSDate?
+    /* The starting time of the time interval the lock can be unlocked. Not applicable for admin / owner permissions. */
+    @NSManaged public var scheduledStartTime: NSNumber?
+    
+    /* The ending time of the time interval the lock can be unlocked. Not applicable for admin / owner permissions. */
+    @NSManaged public var scheduledEndTime: NSNumber?
+    
+    /* Whether the user can distribute keys derived from this permission. */
+    @NSManaged public var admin: Bool
+    
+    /* Whether the user is the owner / creator of this lock. There can only be one owner per lock, the user which setup the lock. */
+    @NSManaged public var owner: Bool
     
     // MARK: Relationships
     
     /* The lock this permission is granting access for. */
-    public @NSManaged var lock: Lock
+    @NSManaged public var lock: Lock
     
     /* The user this permssion is granting access to. */
-    public @NSManaged var user: User
+    @NSManaged public var user: User
     
     /* Permissions derived from this permission. */
-    public @NSManaged var derivedPermissions: Set<Permisssion>?
+    @NSManaged public var derivedPermissions: Set<Permission>?
     
     /* Permission this permission was derived from. */
-    public @NSManaged var parentPermission: Permission?
+    @NSManaged public var parentPermission: Permission?
     
     /* Actions involving this permission. */
-    public @NSManaged var actions: Set<Action>?
+    @NSManaged public var actions: Set<Action>?
     
     // MARK: - Custom Accessors
     

@@ -15,14 +15,14 @@
         <relationship name="actions" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Action" inverseName="lock" inverseEntity="Action" syncable="YES"/>
         <relationship name="permissions" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Permission" inverseName="lock" inverseEntity="Permission" syncable="YES"/>
     </entity>
-    <entity name="Permission" representedClassName="CoreCerradura.Permission" isAbstract="YES" syncable="YES">
+    <entity name="Permission" representedClassName="CoreCerradura.Permission" syncable="YES">
         <attribute name="admin" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
         <attribute name="archived" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
         <attribute name="created" attributeType="Date" syncable="YES"/>
         <attribute name="endDate" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="owner" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
-        <attribute name="scheduledEndTime" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
-        <attribute name="scheduledStartTime" optional="YES" attributeType="Double" syncable="YES"/>
+        <attribute name="scheduledEndTime" optional="YES" attributeType="Integer 32" minValueString="0" maxValueString="86400" syncable="YES"/>
+        <attribute name="scheduledStartTime" optional="YES" attributeType="Integer 32" minValueString="0" maxValueString="86400" syncable="YES"/>
         <relationship name="actions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Action" inverseName="permission" inverseEntity="Action" syncable="YES"/>
         <relationship name="derivedPermissions" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Permission" inverseName="parentPermission" inverseEntity="Permission" syncable="YES"/>
         <relationship name="lock" maxCount="1" deletionRule="Nullify" destinationEntity="Lock" inverseName="permissions" inverseEntity="Lock" syncable="YES"/>
@@ -42,7 +42,7 @@
     <elements>
         <element name="Action" positionX="-27" positionY="72" width="128" height="120"/>
         <element name="Lock" positionX="-36" positionY="36" width="128" height="135"/>
-        <element name="Permission" positionX="-54" positionY="27" width="128" height="30"/>
+        <element name="Permission" positionX="-54" positionY="27" width="128" height="225"/>
         <element name="User" positionX="-63" positionY="-18" width="128" height="165"/>
     </elements>
 </model>

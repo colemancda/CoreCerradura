@@ -13,18 +13,18 @@ import CoreData
 public class Action: NSManagedObject {
 
     /* Date this action ocurred. */
-    public @NSManaged var date: NSDate
+    @NSManaged public var date: NSDate
     
     /* Type of action. Raw value of ActionType. */
-    public @NSManaged var type: String
+    @NSManaged public var type: String
     
     /* The lock associated with this action. */
-    public @NSManaged var lock: Lock?
+    @NSManaged public var lock: Lock?
     
     /* The user associated with this action. */
-    public @NSManaged var user: User?
+    @NSManaged public var user: User?
     
     /* The permission associated with this action. */
-    public @NSManaged var permission: Permission?
+    @NSManaged public var permission: Permission?
     
 }
