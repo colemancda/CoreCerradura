@@ -53,11 +53,4 @@ public class Permission: NSManagedObject {
     
     /* Actions involving this permission. */
     @NSManaged public var actions: Set<Action>?
-    
-    // MARK: - Custom Accessors
-    
-    public var isArchived: Bool {
-        
-        return self.archived.boolValue
-    }
 }

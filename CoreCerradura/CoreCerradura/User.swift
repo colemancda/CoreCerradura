@@ -23,17 +23,4 @@ public class User: NSManagedObject {
     @NSManaged public var actions: Set<Action>?
     @NSManaged public var permissions: Set<Permission>?
     
-    // MARK: - Custom Accessors
-    
-    public var isArchived: Bool {
-        
-        return self.archived.boolValue
-    }
-    
-    public var isEmailValidated: Bool {
-        
-        return self.isEmailValidated.boolValue
-    }
-    
-    
 }

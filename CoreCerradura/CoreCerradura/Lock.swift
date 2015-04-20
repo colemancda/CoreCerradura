@@ -29,18 +29,4 @@ public class Lock: NSManagedObject {
     
     /* Permissions granted for this lock. */
     @NSManaged public var permissions: Set<Permission>?
-    
-    // MARK: - Custom Accessors
-    
-    /* Custom accessor for 'archived' attribute. */
-    public var isArchived: Bool {
-        
-        return self.archived.boolValue
-    }
-    
-    /* Custom accessor for 'online' attribute. */
-    public var isOnline: Bool {
-        
-        return self.online.boolValue
-    }
 }
