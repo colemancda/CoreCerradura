@@ -53,4 +53,11 @@ public class Permission: NSManagedObject {
     
     /* Actions involving this permission. */
     @NSManaged public var actions: Set<Action>?
+    
+    // MARK: - Initialization
+    
+    public override func awakeFromInsert() {
+        
+        self.created = NSDate()
+    }
 }

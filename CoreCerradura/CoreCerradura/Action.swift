@@ -11,12 +11,18 @@ import CoreData
 
 /* Encapsulates an action. Used for activity history. */
 public class Action: NSManagedObject {
+    
+    // MARK: - Properties
+    
+    // MARK: Attributes
 
     /* Date this action ocurred. */
     @NSManaged public var date: NSDate
     
     /* Type of action. Raw value of ActionType. */
     @NSManaged public var type: String
+    
+    // MARK: Relationships
     
     /* The lock associated with this action. */
     @NSManaged public var lock: Lock?
@@ -26,5 +32,12 @@ public class Action: NSManagedObject {
     
     /* The permission associated with this action. */
     @NSManaged public var permission: Permission?
+    
+    // MARK: - Initialization
+    
+    public override func awakeFromInsert() {
+        
+        self.date = NSDate()
+    }
     
 }
