@@ -22,6 +22,9 @@ public class Permission: NSManagedObject {
     /* Date the permission was created. */
     @NSManaged public var created: NSDate
     
+    /* The date this permission does into effect. */
+    @NSManaged public var startDate: NSDate
+    
     /* The date this permission becomes invalid. Not applicable for owner permissions. */
     @NSManaged public var endDate: NSDate?
     
@@ -59,5 +62,7 @@ public class Permission: NSManagedObject {
     public override func awakeFromInsert() {
         
         self.created = NSDate()
+        
+        self.startDate = NSDate()
     }
 }

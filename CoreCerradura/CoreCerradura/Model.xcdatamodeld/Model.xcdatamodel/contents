@@ -23,6 +23,7 @@
         <attribute name="owner" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
         <attribute name="scheduledEndTime" optional="YES" attributeType="Integer 32" minValueString="0" maxValueString="86400" syncable="YES"/>
         <attribute name="scheduledStartTime" optional="YES" attributeType="Integer 32" minValueString="0" maxValueString="86400" syncable="YES"/>
+        <attribute name="startDate" attributeType="Date" syncable="YES"/>
         <relationship name="actions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Action" inverseName="permission" inverseEntity="Action" syncable="YES"/>
         <relationship name="derivedPermissions" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Permission" inverseName="parentPermission" inverseEntity="Permission" syncable="YES"/>
         <relationship name="lock" maxCount="1" deletionRule="Nullify" destinationEntity="Lock" inverseName="permissions" inverseEntity="Lock" syncable="YES"/>
@@ -42,7 +43,7 @@
     <elements>
         <element name="Action" positionX="-27" positionY="72" width="128" height="120"/>
         <element name="Lock" positionX="-36" positionY="36" width="128" height="135"/>
-        <element name="Permission" positionX="-54" positionY="27" width="128" height="225"/>
+        <element name="Permission" positionX="-54" positionY="27" width="128" height="240"/>
         <element name="User" positionX="-63" positionY="-18" width="128" height="165"/>
     </elements>
 </model>
