@@ -10,7 +10,7 @@ import Foundation
 import CoreData
 
 /* A permission encapsulates access control for a specified lock and user. */
-public class Permission: NSManagedObject {
+public class Permission: NSManagedObject, Archiveable {
     
     // MARK: - Properties
 
