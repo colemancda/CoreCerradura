@@ -35,10 +35,10 @@ public class Permission: NSManagedObject, Archiveable {
     @NSManaged public var scheduledEndTime: NSNumber?
     
     /* Whether the user can distribute keys derived from this permission. */
-    @NSManaged public var admin: Bool
+    @NSManaged public var admin: NSNumber
     
     /* Whether the user is the owner / creator of this lock. There can only be one owner per lock, the user which setup the lock. */
-    @NSManaged public var owner: Bool
+    @NSManaged public var owner: NSNumber
     
     // MARK: Relationships
     
