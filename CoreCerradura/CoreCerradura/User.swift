@@ -9,7 +9,7 @@
 import Foundation
 import CoreData
 
-public class User: NSManagedObject, Archiveable {
+public class User: NSManagedObject, Archivable {
     
     // MARK: - Properties
     
@@ -40,5 +40,12 @@ public class User: NSManagedObject, Archiveable {
     public override func awakeFromInsert() {
         
         self.created = NSDate()
+    }
+    
+    // MARK: - Archiveable
+    
+    public func didArchive() {
+        
+        
     }
 }

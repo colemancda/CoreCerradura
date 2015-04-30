@@ -39,7 +39,6 @@ public class Action: NSManagedObject {
         
         self.date = NSDate()
     }
-    
 }
 
 /* Specifies the type of action. */

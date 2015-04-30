@@ -10,7 +10,7 @@ import Foundation
 import CoreData
 
 /* Entity representing an instance of a physical lock. */
-public class Lock: NSManagedObject, Archiveable {
+public class Lock: NSManagedObject, Archivable {
     
     // MARK: - Properties
     
@@ -42,6 +42,12 @@ public class Lock: NSManagedObject, Archiveable {
         
         self.created = NSDate()
     }
+    
+    // MARK: - Archiveable
+    
+    public func didArchive() {
+        
+        
+    }
 }
 
-public let UnlockFunctionName = "unlock"

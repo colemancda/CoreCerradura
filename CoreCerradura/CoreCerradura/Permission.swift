@@ -10,7 +10,7 @@ import Foundation
 import CoreData
 
 /* A permission encapsulates access control for a specified lock and user. */
-public class Permission: NSManagedObject, Archiveable {
+public class Permission: NSManagedObject, Archivable {
     
     // MARK: - Properties
 
@@ -64,5 +64,12 @@ public class Permission: NSManagedObject, Archiveable {
         self.created = NSDate()
         
         self.startDate = NSDate()
+    }
+    
+    // MARK: - Archiveable
+    
+    public func didArchive() {
+        
+        
     }
 }
