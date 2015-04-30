@@ -7,10 +7,3 @@
 //
 
 public let UnlockFunctionName = "unlock"
-
-public enum UnlockError: String {
-    
-    case IncorrectPermissions = "IncorrectPermissions"
-    
-    case LockOffline = "LockOffline"
-}

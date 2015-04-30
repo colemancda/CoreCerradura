@@ -221,8 +221,7 @@
 				6E4642F31AD9E045005BDBA7 /* CoreCerradura.h */,
 				6E8D77B41AE9DF3C00370898 /* Define.swift */,
 				6E46431E1AD9E953005BDBA7 /* Model.xcdatamodeld */,
-				6E0AB6701AE5D37500AAAF50 /* Archivable.swift */,
-				6EF11F051AF2670100A7C4BC /* Unlock.swift */,
+				6EF11F071AF26D5200A7C4BC /* Functions */,
 				6E4643211ADADB1A005BDBA7 /* Model */,
 				6E4642F11AD9E045005BDBA7 /* Supporting Files */,
 			);
@@ -333,6 +332,15 @@
 				6E4643711ADAE2F1005BDBA7 /* iOSSwift.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		6EF11F071AF26D5200A7C4BC /* Functions */ = {
+			isa = PBXGroup;
+			children = (
+				6E0AB6701AE5D37500AAAF50 /* Archivable.swift */,
+				6EF11F051AF2670100A7C4BC /* Unlock.swift */,
+			);
+			name = Functions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
