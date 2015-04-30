@@ -43,3 +43,5 @@ public class Lock: NSManagedObject, Archiveable {
         self.created = NSDate()
     }
 }
+
+public let UnlockFunctionName = "unlock"

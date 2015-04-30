@@ -41,3 +41,16 @@ public class Action: NSManagedObject {
     }
     
 }
+
+/* Specifies the type of action. */
+public enum ActionType: String {
+    
+    /* A new entity was created. */
+    case New = "new"
+    
+    /* An entity has been archived / invalidated. */
+    case Archived = "archived"
+    
+    /* A lock was unlocked. */
+    case Unlocked = "unlocked"
+}

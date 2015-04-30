@@ -12,3 +12,5 @@ public protocol Archiveable {
     /* Whether this entity is archived or not. Archived entities are basically deleted, but still stored for historical purposes. */
     var archived: NSNumber { get set }
 }
+
+public let ArchiveFunctionName = "archive"
