@@ -34,6 +34,9 @@ public class Lock: NSManagedObject, Archivable {
     /* The version of the software currently on the lock. */
     @NSManaged public var version: String?
     
+    /** The lock is currently updating its software. */
+    @NSManaged public var updating: NSNumber
+    
     // MARK: Relationships
     
     /* Actions involving this lock. */

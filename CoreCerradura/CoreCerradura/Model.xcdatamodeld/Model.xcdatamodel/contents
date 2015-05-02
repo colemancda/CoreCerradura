@@ -13,6 +13,7 @@
         <attribute name="model" attributeType="String" syncable="YES"/>
         <attribute name="online" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
         <attribute name="secret" attributeType="String" minValueString="10" syncable="YES"/>
+        <attribute name="updating" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
         <attribute name="version" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="actions" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Action" inverseName="lock" inverseEntity="Action" syncable="YES"/>
         <relationship name="pendingCommands" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="LockCommand" inverseName="lock" inverseEntity="LockCommand" syncable="YES"/>
@@ -50,9 +51,9 @@
     </entity>
     <elements>
         <element name="Action" positionX="-27" positionY="72" width="128" height="120"/>
-        <element name="Lock" positionX="-36" positionY="36" width="128" height="180"/>
+        <element name="Lock" positionX="-36" positionY="36" width="128" height="195"/>
+        <element name="LockCommand" positionX="-45" positionY="117" width="128" height="90"/>
         <element name="Permission" positionX="-54" positionY="27" width="128" height="240"/>
         <element name="User" positionX="-63" positionY="-18" width="128" height="165"/>
-        <element name="LockCommand" positionX="-45" positionY="117" width="128" height="90"/>
     </elements>
 </model>
