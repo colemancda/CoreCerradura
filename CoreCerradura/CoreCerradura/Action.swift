@@ -41,6 +41,8 @@ public class Action: NSManagedObject {
     }
 }
 
+// MARK: - Enumerations
+
 /* Specifies the type of action. */
 public enum ActionType: String {
     
