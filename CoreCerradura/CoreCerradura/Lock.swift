@@ -28,6 +28,12 @@ public class Lock: NSManagedObject, Archivable {
     /* The lock´s secret. Only the owner can see this. */
     @NSManaged public var secret: String
     
+    /* The model of the lock. Raw value for LockModel. */
+    @NSManaged public var model: String
+    
+    /* The version of the software currently on the lock. */
+    @NSManaged public var version: String?
+    
     // MARK: Relationships
     
     /* Actions involving this lock. */
@@ -52,5 +58,12 @@ public class Lock: NSManagedObject, Archivable {
         
         
     }
+}
+
+// MARK: - Enumerations
+
+public enum LockModel: String {
+    
+    case Edison = "Edison"
 }
 

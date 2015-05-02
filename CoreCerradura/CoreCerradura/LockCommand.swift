@@ -40,5 +40,7 @@ public class LockCommand: NSManagedObject {
 public enum LockCommandType: String {
     
     case Unlock = "unlock"
+    
+    case Update = "update"
 }
 
