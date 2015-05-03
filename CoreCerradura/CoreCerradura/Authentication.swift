@@ -7,7 +7,8 @@
 //
 
 import Foundation
-import IDZSwiftCommonCrypto
+import CommonCrypto
+import Crypto
 
 // MARK: - Functions
 
@@ -16,22 +17,13 @@ import IDZSwiftCommonCrypto
 /// :param: identifier The identifier (resource ID or username) of the entity trying to authenticate.
 /// :param: secret The secret (e.g. password) of the entity trying to authenticate.
 /// :param: request The URL request being made to the server.
-/// :param: requestBody The data being sent to the server.
-public func GenerateAuthorizationHeader(identifier: String, secret: String, authenticationContext: AuthenticationContext) -> String {
+public func GenerateAuthorizationHeader(identifier: String, secret: String, request: NSURLRequest) -> String {
     
     // Modeled after AWS http://docs.aws.amazon.com/AmazonS3/latest/dev/RESTAuthentication.html#UsingTemporarySecurityCredentials
     
-    let httpVerb = request.HTTPMethod!
+    let contentMD5 = Diges
     
-    let stringToSign = 
-}
-
-public class AuthenticationContext {
+    let stringToSign = request.HTTPMethod! +
     
-    let HTTPVerb: String
-    
-    let HTTPBody: NSData
-    
-    let date: NSDate = NSDate()
-    
+    return ""
 }
