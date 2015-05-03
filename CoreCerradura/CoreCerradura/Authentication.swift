@@ -21,9 +21,31 @@ public func GenerateAuthorizationHeader(identifier: String, secret: String, requ
     
     // Modeled after AWS http://docs.aws.amazon.com/AmazonS3/latest/dev/RESTAuthentication.html#UsingTemporarySecurityCredentials
     
-    let contentMD5 = Diges
+    let contentMD5 = request.HTTPBody?.MD5
     
-    let stringToSign = request.HTTPMethod! +
+    var contentMD5String: String = ""
+    
+    if contentMD5 != nil {
+        
+        contentMD5String = NSString(data: contentMD5!, encoding: NSUTF8StringEncoding) as! String
+    }
+    
+    let dateString = AuthenticationDateFormatter.stringFromDate(NSDate())
+    
+    let stringToSign = request.HTTPMethod! + contentMD5String + request.URL!.path! + dateString
     
     return ""
 }
+
+// MARK: - Private Contants
+
+private let AuthenticationDateFormatter: NSDateFormatter = {
+   
+    let dateFormatter = NSDateFormatter()
+    
+    dateFormatter.dateStyle = NSDateFormatterStyle.ShortStyle
+    
+    dateFormatter.timeStyle = NSDateFormatterStyle.MediumStyle
+    
+    return dateFormatter
+}()
