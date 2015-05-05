@@ -15,6 +15,7 @@
 		6E4643011AD9E045005BDBA7 /* CoreCerraduraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4643001AD9E045005BDBA7 /* CoreCerraduraTests.swift */; };
 		6E4643201AD9E953005BDBA7 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6E46431E1AD9E953005BDBA7 /* Model.xcdatamodeld */; };
 		6E4643781ADAE320005BDBA7 /* NetworkObjects.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E46432A1ADADCD8005BDBA7 /* NetworkObjects.framework */; };
+		6E6AEE0E1AF8F821008BE513 /* IDZSwiftCommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EC3F5E61AF6B64600B71D46 /* IDZSwiftCommonCrypto.framework */; };
 		6E8D77B51AE9DF3C00370898 /* Define.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8D77B41AE9DF3C00370898 /* Define.swift */; };
 		6E9821311AE2D5B400D393DF /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9821301AE2D5B400D393DF /* Action.swift */; };
 		6E9821331AE2D5B400D393DF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9821321AE2D5B400D393DF /* User.swift */; };
@@ -53,6 +54,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 6EAD584519C3B58300DC080A;
 			remoteInfo = NetworkObjects;
+		};
+		6E6AEE1A1AF8F82A008BE513 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6EC3F5E01AF6B64600B71D46 /* IDZSwiftCommonCrypto.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0CCB89AA19CE05F800068ED6;
+			remoteInfo = IDZSwiftCommonCrypto;
 		};
 		6EC3F5AA1AF65D8300B71D46 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -200,6 +208,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E6AEE0E1AF8F821008BE513 /* IDZSwiftCommonCrypto.framework in Frameworks */,
 				6EC3F5DF1AF66AEE00B71D46 /* CommonCrypto.framework in Frameworks */,
 				6EC3F5DC1AF66ADF00B71D46 /* Crypto.framework in Frameworks */,
 				6E4643781ADAE320005BDBA7 /* NetworkObjects.framework in Frameworks */,
@@ -395,6 +404,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				6E6AEE1B1AF8F82A008BE513 /* PBXTargetDependency */,
 				6EC3F5DE1AF66AEA00B71D46 /* PBXTargetDependency */,
 				6EC3F5DB1AF66AD900B71D46 /* PBXTargetDependency */,
 				6E4643731ADAE313005BDBA7 /* PBXTargetDependency */,
@@ -653,6 +663,11 @@
 			isa = PBXTargetDependency;
 			name = NetworkObjects;
 			targetProxy = 6E4643721ADAE313005BDBA7 /* PBXContainerItemProxy */;
+		};
+		6E6AEE1B1AF8F82A008BE513 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IDZSwiftCommonCrypto;
+			targetProxy = 6E6AEE1A1AF8F82A008BE513 /* PBXContainerItemProxy */;
 		};
 		6EC3F5DB1AF66AD900B71D46 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
