@@ -4,3 +4,6 @@
 [submodule "Crypto"]
 	path = Crypto
 	url = https://github.com/colemancda/Crypto.git
+[submodule "IDZSwiftCommonCrypto"]
+	path = IDZSwiftCommonCrypto
+	url = https://github.com/colemancda/IDZSwiftCommonCrypto.git
