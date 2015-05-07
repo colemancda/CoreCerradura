@@ -15,20 +15,16 @@ import IDZSwiftCommonCrypto
 ///
 /// :param: identifier The identifier (resource ID or username) of the entity trying to authenticate.
 /// :param: secret The secret (e.g. password) of the entity trying to authenticate.
-/// :param: request The URL request being made to the server. Request must include 'Date' header.
-public func GenerateAuthorizationHeader(identifier: String, secret: String, request: NSURLRequest) -> String {
+/// :param: context The authentication context info. 
+public func GenerateAuthenticationToken(identifier: String, secret: String, context: AuthenticationContext) -> String {
     
     // Modeled after AWS http://docs.aws.amazon.com/AmazonS3/latest/dev/RESTAuthentication.html#UsingTemporarySecurityCredentials
     
-    let dateString = request.valueForHTTPHeaderField("Date")!
-    
-    let stringToSign = request.HTTPMethod! + request.URL!.path! + dateString
+    let stringToSign = context.verb + context.path + context.dateString
     
     let secretData = (secret as NSString).dataUsingEncoding(NSUTF8StringEncoding)!
     
-    let stringToSignData = (stringToSign as NSString).dataUsingEncoding(NSUTF8StringEncoding)!
-    
-    let signedKeyBytes = HMAC(algorithm: HMAC.Algorithm.SHA512, key: secretData).update(secret)!.final()
+    let signedKeyBytes = HMAC(algorithm: HMAC.Algorithm.SHA512, key: secretData).update(stringToSign)!.final()
     
     let signedKey = NSData(bytes: signedKeyBytes, length: signedKeyBytes.count)
     
@@ -41,4 +37,27 @@ public func GenerateAuthorizationHeader(identifier: String, secret: String, requ
     let authorizationString = NSString(data: jsonData, encoding: NSUTF8StringEncoding)
     
     return authorizationString as! String
+}
+
+// MARK: - Enumerations
+
+/** Provides the context for authorization. Public information only. */
+public struct AuthenticationContext {
+    
+    // MARK: - Properties
+    
+    public let verb: String
+    
+    public let path: String
+    
+    public let dateString: String
+    
+    // MARK: - Initialization
+    
+    public init(verb: String, path: String, dateString: String) {
+        
+        self.verb = verb
+        self.path = path
+        self.dateString = dateString
+    }
 }
