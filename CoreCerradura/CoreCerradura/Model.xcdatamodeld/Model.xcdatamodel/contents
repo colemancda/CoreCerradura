@@ -18,7 +18,7 @@
         <relationship name="pendingCommands" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="LockCommand" inverseName="lock" inverseEntity="LockCommand" syncable="YES"/>
         <relationship name="permissions" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Permission" inverseName="lock" inverseEntity="Permission" syncable="YES"/>
     </entity>
-    <entity name="LockCommand" representedClassName="PRODUCT_MODULE_NAME.LockCommand" syncable="YES">
+    <entity name="LockCommand" representedClassName="CoreCerradura.LockCommand" syncable="YES">
         <attribute name="command" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="date" attributeType="Date" syncable="YES"/>
         <relationship name="lock" maxCount="1" deletionRule="Nullify" destinationEntity="Lock" inverseName="pendingCommands" inverseEntity="Lock" syncable="YES"/>
