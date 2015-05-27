@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7549" systemVersion="14D136" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14D136" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Action" representedClassName="CoreCerradura.Action" syncable="YES">
         <attribute name="date" attributeType="Date" syncable="YES"/>
         <attribute name="type" attributeType="String" syncable="YES"/>
@@ -10,6 +10,7 @@
     <entity name="Lock" representedClassName="CoreCerradura.Lock" syncable="YES">
         <attribute name="archived" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
         <attribute name="created" attributeType="Date" syncable="YES"/>
+        <attribute name="firmwareBuild" optional="YES" attributeType="Integer 64" syncable="YES"/>
         <attribute name="model" attributeType="String" syncable="YES"/>
         <attribute name="secret" attributeType="String" minValueString="10" syncable="YES"/>
         <attribute name="updating" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
@@ -50,7 +51,7 @@
     </entity>
     <elements>
         <element name="Action" positionX="-27" positionY="72" width="128" height="120"/>
-        <element name="Lock" positionX="-36" positionY="36" width="128" height="180"/>
+        <element name="Lock" positionX="-36" positionY="36" width="128" height="195"/>
         <element name="LockCommand" positionX="-45" positionY="117" width="128" height="90"/>
         <element name="Permission" positionX="-54" positionY="27" width="128" height="240"/>
         <element name="User" positionX="-63" positionY="-18" width="128" height="165"/>
