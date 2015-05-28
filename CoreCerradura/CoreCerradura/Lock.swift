@@ -34,9 +34,6 @@ public class Lock: NSManagedObject, Archivable {
     /** The build number of the firmware loaded on the lock. */
     @NSManaged public var firmwareBuild: NSNumber?
     
-    /** The lock is currently updating its software. */
-    @NSManaged public var updating: NSNumber
-    
     // MARK: Relationships
     
     /* Actions involving this lock. */
