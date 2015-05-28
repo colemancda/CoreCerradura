@@ -45,9 +45,6 @@ public class Lock: NSManagedObject, Archivable {
     /* Permissions granted for this lock. */
     @NSManaged public var permissions: Set<Permission>?
     
-    /** Pending commands for the lock. Only used by server. Clients never recieve this info. */
-    @NSManaged public var pendingCommands: Set<LockCommand>?
-    
     // MARK: - Initialization
     
     public override func awakeFromInsert() {
