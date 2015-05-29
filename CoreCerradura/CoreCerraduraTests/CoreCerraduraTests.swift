@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 ColemanCDA. All rights reserved.
 //
 
-import Cocoa
+import Foundation
 import XCTest
 
 class CoreCerraduraTests: XCTestCase {
