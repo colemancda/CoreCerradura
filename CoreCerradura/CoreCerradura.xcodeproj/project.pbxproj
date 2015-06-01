@@ -21,7 +21,6 @@
 		6E9821331AE2D5B400D393DF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9821321AE2D5B400D393DF /* User.swift */; };
 		6E9821351AE2D5B500D393DF /* Lock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9821341AE2D5B500D393DF /* Lock.swift */; };
 		6EC3F5DC1AF66ADF00B71D46 /* Crypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EC3F5D11AF668D000B71D46 /* Crypto.framework */; };
-		6EC3F5DF1AF66AEE00B71D46 /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EC3F5CF1AF668D000B71D46 /* CommonCrypto.framework */; };
 		6EF11F061AF2670100A7C4BC /* Unlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF11F051AF2670100A7C4BC /* Unlock.swift */; };
 /* End PBXBuildFile section */
 
@@ -235,7 +234,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E6AEE0E1AF8F821008BE513 /* IDZSwiftCommonCrypto.framework in Frameworks */,
-				6EC3F5DF1AF66AEE00B71D46 /* CommonCrypto.framework in Frameworks */,
 				6EC3F5DC1AF66ADF00B71D46 /* Crypto.framework in Frameworks */,
 				6E4643781ADAE320005BDBA7 /* NetworkObjects.framework in Frameworks */,
 			);
@@ -854,6 +852,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -875,6 +874,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
