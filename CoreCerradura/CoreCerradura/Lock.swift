@@ -9,37 +9,37 @@
 import Foundation
 import CoreData
 
-/* Entity representing an instance of a physical lock. */
+/** Entity representing an instance of a physical lock. */
 public class Lock: NSManagedObject, Archivable {
     
     // MARK: - Properties
     
     // MARK: Attributes
 
-    /* Whether this entity is archived or not. Archived entities are basically deleted, but still stored for historical purposes. */
+    /** Whether this entity is archived or not. Archived entities are basically deleted, but still stored for historical purposes. */
     @NSManaged public var archived: NSNumber
     
-    /* Date the lock was created. */
+    /** Date the lock was created. */
     @NSManaged public var created: NSDate
     
-    /* The lock´s secret. Only the owner can see this. */
+    /** The lock´s secret. Only the owner can see this. */
     @NSManaged public var secret: String
     
-    /* The model of the lock. Raw value for LockModel. */
+    /** The model of the lock. Raw value for LockModel. */
     @NSManaged public var model: String
     
-    /* The version of the software currently on the lock. */
-    @NSManaged public var version: String?
+    /** The version of the software currently on the lock. */
+    @NSManaged public var version: String
     
     /** The build number of the firmware loaded on the lock. */
-    @NSManaged public var firmwareBuild: NSNumber?
+    @NSManaged public var firmwareBuild: NSNumber
     
     // MARK: Relationships
     
-    /* Actions involving this lock. */
+    /** Actions involving this lock. */
     @NSManaged public var actions: Set<Action>?
     
-    /* Permissions granted for this lock. */
+    /** Permissions granted for this lock. */
     @NSManaged public var permissions: Set<Permission>?
     
     // MARK: - Initialization
@@ -61,6 +61,8 @@ public class Lock: NSManagedObject, Archivable {
 
 public enum LockModel: String {
     
+    case Simulator = "Simulator"
     case Edison = "Edison"
+    case Chip = "Chip"
 }
 

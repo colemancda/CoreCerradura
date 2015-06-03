@@ -11,10 +11,10 @@
     <entity name="Lock" representedClassName="CoreCerradura.Lock" syncable="YES">
         <attribute name="archived" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
         <attribute name="created" attributeType="Date" syncable="YES"/>
-        <attribute name="firmwareBuild" optional="YES" attributeType="Integer 64" syncable="YES"/>
+        <attribute name="firmwareBuild" attributeType="Integer 64" minValueString="1" defaultValueString="1" syncable="YES"/>
         <attribute name="model" attributeType="String" syncable="YES"/>
         <attribute name="secret" attributeType="String" minValueString="10" syncable="YES"/>
-        <attribute name="version" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="version" attributeType="String" defaultValueString="1.0.0" syncable="YES"/>
         <relationship name="actions" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Action" inverseName="lock" inverseEntity="Action" syncable="YES"/>
         <relationship name="permissions" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Permission" inverseName="lock" inverseEntity="Permission" syncable="YES"/>
     </entity>
