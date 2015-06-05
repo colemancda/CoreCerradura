@@ -37,9 +37,6 @@ public class Permission: NSManagedObject, Archivable {
     /* Whether the user can distribute keys derived from this permission. */
     @NSManaged public var admin: NSNumber
     
-    /* Whether the user is the owner / creator of this lock. There can only be one owner per lock, the user which setup the lock. */
-    @NSManaged public var owner: NSNumber
-    
     // MARK: Relationships
     
     /* The lock this permission is granting access for. */

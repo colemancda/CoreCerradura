@@ -22,6 +22,9 @@ public class Lock: NSManagedObject, Archivable {
     /** Date the lock was created. */
     @NSManaged public var created: NSDate
     
+    /** Human-readable name for the lock. */
+    @NSManaged public var name: String
+    
     /** The lock´s secret. Only the owner can see this. */
     @NSManaged public var secret: String
     

@@ -13,6 +13,7 @@
         <attribute name="created" attributeType="Date" syncable="YES"/>
         <attribute name="firmwareBuild" attributeType="Integer 64" minValueString="1" defaultValueString="1" syncable="YES"/>
         <attribute name="model" attributeType="String" syncable="YES"/>
+        <attribute name="name" attributeType="String" minValueString="1" defaultValueString="Lock" syncable="YES"/>
         <attribute name="secret" attributeType="String" minValueString="10" syncable="YES"/>
         <attribute name="version" attributeType="String" defaultValueString="1.0.0" syncable="YES"/>
         <relationship name="actions" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Action" inverseName="lock" inverseEntity="Action" syncable="YES"/>
@@ -23,7 +24,6 @@
         <attribute name="archived" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
         <attribute name="created" attributeType="Date" syncable="YES"/>
         <attribute name="endDate" optional="YES" attributeType="Date" syncable="YES"/>
-        <attribute name="owner" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
         <attribute name="scheduledEndTime" optional="YES" attributeType="Integer 32" minValueString="0" maxValueString="86400" syncable="YES"/>
         <attribute name="scheduledStartTime" optional="YES" attributeType="Integer 32" minValueString="0" maxValueString="86400" syncable="YES"/>
         <attribute name="startDate" attributeType="Date" syncable="YES"/>
@@ -45,8 +45,8 @@
     </entity>
     <elements>
         <element name="Action" positionX="-27" positionY="72" width="128" height="135"/>
-        <element name="Lock" positionX="-36" positionY="36" width="128" height="165"/>
-        <element name="Permission" positionX="-54" positionY="27" width="128" height="240"/>
+        <element name="Lock" positionX="-36" positionY="36" width="128" height="180"/>
+        <element name="Permission" positionX="-54" positionY="27" width="128" height="225"/>
         <element name="User" positionX="-63" positionY="-18" width="128" height="165"/>
     </elements>
 </model>
