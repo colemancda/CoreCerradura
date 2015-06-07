@@ -36,7 +36,7 @@
     <entity name="User" representedClassName="CoreCerradura.User" syncable="YES">
         <attribute name="archived" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
         <attribute name="created" attributeType="Date" syncable="YES"/>
-        <attribute name="email" attributeType="String" minValueString="6" maxValueString="256" syncable="YES"/>
+        <attribute name="email" attributeType="String" minValueString="6" maxValueString="256" regularExpressionString="[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}" syncable="YES"/>
         <attribute name="emailValidated" attributeType="Boolean" defaultValueString="0" syncable="YES"/>
         <attribute name="password" attributeType="String" minValueString="6" maxValueString="256" regularExpressionString="([a-z0-9_-])+" syncable="YES"/>
         <attribute name="username" attributeType="String" minValueString="6" maxValueString="256" regularExpressionString="([a-z0-9_-])+" syncable="YES"/>
