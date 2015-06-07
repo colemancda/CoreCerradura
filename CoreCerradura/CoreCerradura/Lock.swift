@@ -56,7 +56,23 @@ public class Lock: NSManagedObject, Archivable {
     
     public func didArchive() {
         
+        // archive permissions
+        if self.permissions != nil {
+            
+            for permission in self.permissions! {
+                
+                Archive(permission)
+            }
+        }
+    }
+    
+    // MARK: - Validation
+    
+    public func validateModel(ioValue: AutoreleasingUnsafeMutablePointer<AnyObject?>, error outError: NSErrorPointer) -> Bool {
         
+        let modelValue = ioValue.memory as! String
+        
+        return (LockModel(rawValue: modelValue) != nil)
     }
 }
 

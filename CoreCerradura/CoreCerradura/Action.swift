@@ -22,6 +22,9 @@ public class Action: NSManagedObject {
     /** Type of action. Raw value of ActionType. */
     @NSManaged public var type: String
     
+    /** Status the action has been completed. Raw value of ActionStatus. */
+    @NSManaged public var status: String
+    
     // MARK: Relationships
     
     /** The lock associated with this action. */
@@ -33,9 +36,6 @@ public class Action: NSManagedObject {
     /** The permission associated with this action. */
     @NSManaged public var permission: Permission?
     
-    /** Status the action has been completed. */
-    @NSManaged public var status: String
-    
     // MARK: - Initialization
     
     public override func awakeFromInsert() {
@@ -43,6 +43,22 @@ public class Action: NSManagedObject {
         self.date = NSDate()
         
         self.status = ActionStatus.Completed.rawValue
+    }
+    
+    // MARK: - Validation
+    
+    public func validateType(ioValue: AutoreleasingUnsafeMutablePointer<AnyObject?>, error outError: NSErrorPointer) -> Bool {
+        
+        let rawValue = ioValue.memory as! ActionType.RawValue
+        
+        return (ActionType(rawValue: rawValue) != nil)
+    }
+    
+    public func validateStatus(ioValue: AutoreleasingUnsafeMutablePointer<AnyObject?>, error outError: NSErrorPointer) -> Bool {
+        
+        let rawValue = ioValue.memory as! ActionStatus.RawValue
+        
+        return (ActionStatus(rawValue: rawValue) != nil)
     }
 }
 

@@ -15,10 +15,10 @@ public class User: NSManagedObject, Archivable {
     
     // MARK: Attributes
 
-    /* Whether this entity is archived or not. Archived entities are basically deleted, but still stored for historical purposes. */
+    /** Whether this entity is archived or not. Archived entities are basically deleted, but still stored for historical purposes. */
     @NSManaged public var archived: NSNumber
     
-    /* Date the permission was created. */
+    /** Date the permission was created. */
     @NSManaged public var created: NSDate
     
     @NSManaged public var email: String
@@ -46,6 +46,13 @@ public class User: NSManagedObject, Archivable {
     
     public func didArchive() {
         
-        
+        // archive permissions
+        if self.permissions != nil {
+            
+            for permission in self.permissions! {
+                
+                Archive(permission)
+            }
+        }
     }
 }
