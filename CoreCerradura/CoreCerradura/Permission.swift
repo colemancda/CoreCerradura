@@ -8,6 +8,7 @@
 
 import Foundation
 import CoreData
+import ExSwift
 
 /** A permission encapsulates access control for a specified lock and user. */
 public class Permission: NSManagedObject, Archivable {
@@ -75,5 +76,31 @@ public class Permission: NSManagedObject, Archivable {
                 Archive(permission)
             }
         }
+    }
+    
+    // MARK: - Validation
+    
+    public override func validateForInsert(error: NSErrorPointer) -> Bool {
+        
+        if !super.validateForInsert(error) {
+            
+            return false
+        }
+        
+        // validate
+        
+        // admin permissions cannot be scheduled
+        if self.admin.boolValue && (scheduledStartTime != nil || scheduledEndTime != nil) {
+            
+            return false
+        }
+        
+        // end date should be later than start date
+        if self.endDate != nil {
+            
+            return (self.startDate < self.endDate!)
+        }
+        
+        return true
     }
 }

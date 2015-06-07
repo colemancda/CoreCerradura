@@ -70,9 +70,9 @@ public class Lock: NSManagedObject, Archivable {
     
     public func validateModel(ioValue: AutoreleasingUnsafeMutablePointer<AnyObject?>, error outError: NSErrorPointer) -> Bool {
         
-        let modelValue = ioValue.memory as! String
+        let rawValue = ioValue.memory as! LockModel.RawValue
         
-        return (LockModel(rawValue: modelValue) != nil)
+        return (LockModel(rawValue: rawValue) != nil)
     }
 }
 
