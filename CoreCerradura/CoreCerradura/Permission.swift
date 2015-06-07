@@ -22,16 +22,16 @@ public class Permission: NSManagedObject, Archivable {
     /* Date the permission was created. */
     @NSManaged public var created: NSDate
     
-    /* The date this permission does into effect. */
+    /* The date this permission goes into effect. */
     @NSManaged public var startDate: NSDate
     
-    /* The date this permission becomes invalid. Not applicable for owner permissions. */
+    /* The date this permission becomes invalid. */
     @NSManaged public var endDate: NSDate?
     
-    /* The starting time of the time interval the lock can be unlocked. Not applicable for admin / owner permissions. */
+    /* The starting time of the time interval the lock can be unlocked. Not applicable for admin permissions. */
     @NSManaged public var scheduledStartTime: NSNumber?
     
-    /* The ending time of the time interval the lock can be unlocked. Not applicable for admin / owner permissions. */
+    /* The ending time of the time interval the lock can be unlocked. Not applicable for admin permissions. */
     @NSManaged public var scheduledEndTime: NSNumber?
     
     /* Whether the user can distribute keys derived from this permission. */
