@@ -4,7 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>CoreCerradura.xcscheme_^#shared#^_</key>
+		<key>CoreCerradura OS X.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>CoreCerradura iOS.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>
@@ -18,6 +23,11 @@
 			<true/>
 		</dict>
 		<key>6E4642F81AD9E045005BDBA7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6E95D1FC1B2B2EBD000DD4DA</key>
 		<dict>
 			<key>primary</key>
 			<true/>

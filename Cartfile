@@ -1,3 +1,2 @@
 github "ColemanCDA/NetworkObjects" "develop"
-github "ColemanCDA/Crypto" "master"
 github "ColemanCDA/IDZSwiftCommonCrypto" "master"
