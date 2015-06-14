@@ -14,3 +14,6 @@ public func CoreCerraduraManagedObjectModel() -> NSManagedObjectModel {
     
     return NSManagedObjectModel(contentsOfURL: NSBundle(identifier: "com.colemancda.CoreCerradura")!.URLForResource("Model", withExtension: "momd")!)!
 }
+
+/** Whether the model objects should behave as they are in server mode. */
+public var CoreCerraduraServerMode = false

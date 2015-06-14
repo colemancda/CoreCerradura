@@ -75,6 +75,12 @@ public class Lock: NSManagedObject, Archivable {
             return false
         }
         
+        // omit validation for client
+        if !CoreCerraduraServerMode {
+            
+            return true
+        }
+        
         if LockModel(rawValue: self.model) == nil {
             
             return false

@@ -85,6 +85,12 @@ public class Permission: NSManagedObject, Archivable {
             return false
         }
         
+        // omit validation for client
+        if !CoreCerraduraServerMode {
+            
+            return true
+        }
+        
         // validate
         
         let permissionType = PermissionType(rawValue: self.permissionType)
