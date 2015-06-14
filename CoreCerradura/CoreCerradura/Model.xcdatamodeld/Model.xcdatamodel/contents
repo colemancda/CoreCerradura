@@ -26,7 +26,7 @@
         <attribute name="permissionType" attributeType="String" syncable="YES"/>
         <attribute name="scheduledEndTime" optional="YES" attributeType="Integer 32" minValueString="0" maxValueString="86400" syncable="YES"/>
         <attribute name="scheduledStartTime" optional="YES" attributeType="Integer 32" minValueString="0" maxValueString="86400" syncable="YES"/>
-        <attribute name="startDate" attributeType="Date" syncable="YES"/>
+        <attribute name="startDate" optional="YES" attributeType="Date" syncable="YES"/>
         <relationship name="actions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Action" inverseName="permission" inverseEntity="Action" syncable="YES"/>
         <relationship name="derivedPermissions" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Permission" inverseName="parentPermission" inverseEntity="Permission" syncable="YES"/>
         <relationship name="lock" maxCount="1" deletionRule="Nullify" destinationEntity="Lock" inverseName="permissions" inverseEntity="Lock" syncable="YES"/>
