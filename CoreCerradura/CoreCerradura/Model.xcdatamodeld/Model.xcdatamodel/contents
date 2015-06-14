@@ -20,10 +20,10 @@
         <relationship name="permissions" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Permission" inverseName="lock" inverseEntity="Permission" syncable="YES"/>
     </entity>
     <entity name="Permission" representedClassName="CoreCerradura.Permission" syncable="YES">
-        <attribute name="admin" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
         <attribute name="archived" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
         <attribute name="created" attributeType="Date" syncable="YES"/>
         <attribute name="endDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="permissionType" attributeType="String" syncable="YES"/>
         <attribute name="scheduledEndTime" optional="YES" attributeType="Integer 32" minValueString="0" maxValueString="86400" syncable="YES"/>
         <attribute name="scheduledStartTime" optional="YES" attributeType="Integer 32" minValueString="0" maxValueString="86400" syncable="YES"/>
         <attribute name="startDate" attributeType="Date" syncable="YES"/>

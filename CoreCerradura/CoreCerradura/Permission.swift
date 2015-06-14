@@ -29,14 +29,14 @@ public class Permission: NSManagedObject, Archivable {
     /** The date this permission becomes invalid. */
     @NSManaged public var endDate: NSDate?
     
-    /** The starting time of the time interval the lock can be unlocked. Not applicable for admin permissions. */
+    /** The starting time of the time interval the lock can be unlocked. Not applicable for admin / anytime permissions. */
     @NSManaged public var scheduledStartTime: NSNumber?
     
-    /** The ending time of the time interval the lock can be unlocked. Not applicable for admin permissions. */
+    /** The ending time of the time interval the lock can be unlocked. Not applicable for admin / anytime permissions. */
     @NSManaged public var scheduledEndTime: NSNumber?
     
-    /** Whether the user can distribute keys derived from this permission. */
-    @NSManaged public var admin: NSNumber
+    /** Type of permission. Raw value for PermissionType. */
+    @NSManaged public var permissionType: String
     
     // MARK: Relationships
     
@@ -60,8 +60,6 @@ public class Permission: NSManagedObject, Archivable {
     public override func awakeFromInsert() {
         
         self.created = NSDate()
-        
-        self.startDate = NSDate()
     }
     
     // MARK: - Archiveable
@@ -89,8 +87,16 @@ public class Permission: NSManagedObject, Archivable {
         
         // validate
         
-        // admin permissions cannot be scheduled
-        if self.admin.boolValue && (scheduledStartTime != nil || scheduledEndTime != nil) {
+        let permissionType = PermissionType(rawValue: self.permissionType)
+        
+        if permissionType == nil {
+            
+            return false
+        }
+        
+        // admin and anytime permissions cannot be scheduled
+        if (permissionType == .Admin || permissionType == .Anytime) &&
+            (scheduledStartTime != nil || scheduledEndTime != nil) {
             
             return false
         }
@@ -103,4 +109,18 @@ public class Permission: NSManagedObject, Archivable {
         
         return true
     }
+}
+
+// MARK: - Enumeration
+
+public enum PermissionType: String {
+    
+    /** Admin permissions have unlimited access and can distribute keys. */
+    case Admin = "admin"
+    
+    /* Anytime permissions have unlimited access but cannot distribute keys. */
+    case Anytime = "anytime"
+    
+    /** Schduled permissions have access during certain hours and can expire. */
+    case Scheduled = "scheduled"
 }

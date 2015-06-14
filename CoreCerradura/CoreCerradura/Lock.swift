@@ -68,14 +68,20 @@ public class Lock: NSManagedObject, Archivable {
     
     // MARK: - Validation
     
-    /*
-    public func validateModel(ioValue: AutoreleasingUnsafeMutablePointer<AnyObject?>, error outError: NSErrorPointer) -> Bool {
+    public override func validateForInsert(error: NSErrorPointer) -> Bool {
         
-        let rawValue = ioValue.memory as! LockModel.RawValue
+        if !super.validateForInsert(error) {
+            
+            return false
+        }
         
-        return (LockModel(rawValue: rawValue) != nil)
+        if LockModel(rawValue: self.model) == nil {
+            
+            return false
+        }
+        
+        return true
     }
-*/
 }
 
 // MARK: - Enumerations

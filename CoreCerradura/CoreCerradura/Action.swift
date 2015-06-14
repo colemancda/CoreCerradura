@@ -44,22 +44,6 @@ public class Action: NSManagedObject {
         
         self.status = ActionStatus.Completed.rawValue
     }
-    
-    // MARK: - Validation
-    
-    public func validateType(ioValue: AutoreleasingUnsafeMutablePointer<AnyObject?>, error outError: NSErrorPointer) -> Bool {
-        
-        let rawValue = ioValue.memory as! ActionType.RawValue
-        
-        return (ActionType(rawValue: rawValue) != nil)
-    }
-    
-    public func validateStatus(ioValue: AutoreleasingUnsafeMutablePointer<AnyObject?>, error outError: NSErrorPointer) -> Bool {
-        
-        let rawValue = ioValue.memory as! ActionStatus.RawValue
-        
-        return (ActionStatus(rawValue: rawValue) != nil)
-    }
 }
 
 // MARK: - Enumerations
