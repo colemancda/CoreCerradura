@@ -1,0 +1,3 @@
+[submodule "IDZSwiftCommonCrypto"]
+	path = IDZSwiftCommonCrypto
+	url = https://github.com/colemancda/IDZSwiftCommonCrypto.git
