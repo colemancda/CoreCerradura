@@ -12,6 +12,10 @@
 	<dict>
 		<key>12F38FB327716B7895CF61666B41920A578D627D</key>
 		<string>https://github.com/colemancda/CoreCerradura.git</string>
+		<key>CA0F008EE3879A49D4AD08C803AC26CAC131963A</key>
+		<string>https://github.com/colemancda/IDZSwiftCommonCrypto.git</string>
+		<key>D9420E81D6A438210B7B3BBEADC7A0283866D9A2</key>
+		<string>https://github.com/colemancda/CommonCrypto.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>CoreCerradura/CoreCerradura.xcodeproj</string>
@@ -19,6 +23,10 @@
 	<dict>
 		<key>12F38FB327716B7895CF61666B41920A578D627D</key>
 		<string>../../..</string>
+		<key>CA0F008EE3879A49D4AD08C803AC26CAC131963A</key>
+		<string>../../../IDZSwiftCommonCrypto/</string>
+		<key>D9420E81D6A438210B7B3BBEADC7A0283866D9A2</key>
+		<string>../../../IDZSwiftCommonCrypto/CommonCrypto/</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/colemancda/CoreCerradura.git</string>
@@ -32,9 +40,25 @@
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D9420E81D6A438210B7B3BBEADC7A0283866D9A2</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CommonCrypto</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>12F38FB327716B7895CF61666B41920A578D627D</string>
 			<key>IDESourceControlWCCName</key>
 			<string>CoreCerradura</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CA0F008EE3879A49D4AD08C803AC26CAC131963A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>IDZSwiftCommonCrypto</string>
 		</dict>
 	</array>
 </dict>
