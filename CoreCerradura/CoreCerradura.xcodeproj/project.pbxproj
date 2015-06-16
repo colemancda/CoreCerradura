@@ -15,37 +15,6 @@
 		6E4643011AD9E045005BDBA7 /* CoreCerraduraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4643001AD9E045005BDBA7 /* CoreCerraduraTests.swift */; };
 		6E4643201AD9E953005BDBA7 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6E46431E1AD9E953005BDBA7 /* Model.xcdatamodeld */; };
 		6E8D77B51AE9DF3C00370898 /* Define.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8D77B41AE9DF3C00370898 /* Define.swift */; };
-		6E95D1FE1B2B2EBD000DD4DA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9821321AE2D5B400D393DF /* User.swift */; };
-		6E95D1FF1B2B2EBD000DD4DA /* Permission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E98212E1AE2D5B400D393DF /* Permission.swift */; };
-		6E95D2001B2B2EBD000DD4DA /* Unlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF11F051AF2670100A7C4BC /* Unlock.swift */; };
-		6E95D2011B2B2EBD000DD4DA /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E05BD301AF65763008FFF84 /* Authentication.swift */; };
-		6E95D2021B2B2EBD000DD4DA /* Define.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8D77B41AE9DF3C00370898 /* Define.swift */; };
-		6E95D2031B2B2EBD000DD4DA /* Lock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9821341AE2D5B500D393DF /* Lock.swift */; };
-		6E95D2041B2B2EBD000DD4DA /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9821301AE2D5B400D393DF /* Action.swift */; };
-		6E95D2051B2B2EBD000DD4DA /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6E46431E1AD9E953005BDBA7 /* Model.xcdatamodeld */; };
-		6E95D2061B2B2EBD000DD4DA /* Archivable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0AB6701AE5D37500AAAF50 /* Archivable.swift */; };
-		6E95D2091B2B2EBD000DD4DA /* CoreCerradura.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E4642F31AD9E045005BDBA7 /* CoreCerradura.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6E95D22F1B2B30CC000DD4DA /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E95D21F1B2B30C2000DD4DA /* CocoaAsyncSocket.framework */; };
-		6E95D2301B2B30CC000DD4DA /* CocoaHTTPServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E95D2201B2B30C2000DD4DA /* CocoaHTTPServer.framework */; };
-		6E95D2311B2B30CC000DD4DA /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E95D2211B2B30C2000DD4DA /* CocoaLumberjack.framework */; };
-		6E95D2321B2B30CC000DD4DA /* ExSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E95D2221B2B30C2000DD4DA /* ExSwift.framework */; };
-		6E95D2331B2B30CC000DD4DA /* NetworkObjects.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E95D2231B2B30C2000DD4DA /* NetworkObjects.framework */; };
-		6E95D2341B2B30CC000DD4DA /* RoutingHTTPServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E95D2241B2B30C2000DD4DA /* RoutingHTTPServer.framework */; };
-		6E95D2351B2B30D6000DD4DA /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E95D2261B2B30C2000DD4DA /* CocoaAsyncSocket.framework */; };
-		6E95D2361B2B30D6000DD4DA /* CocoaHTTPServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E95D2271B2B30C2000DD4DA /* CocoaHTTPServer.framework */; };
-		6E95D2371B2B30D6000DD4DA /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E95D2281B2B30C2000DD4DA /* CocoaLumberjack.framework */; };
-		6E95D23A1B2B30D6000DD4DA /* ExSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E95D22B1B2B30C2000DD4DA /* ExSwift.framework */; };
-		6E95D23B1B2B30D6000DD4DA /* IDZSwiftCommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E95D22C1B2B30C2000DD4DA /* IDZSwiftCommonCrypto.framework */; };
-		6E95D23C1B2B30D6000DD4DA /* NetworkObjects.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E95D22D1B2B30C2000DD4DA /* NetworkObjects.framework */; };
-		6E95D23D1B2B30D6000DD4DA /* RoutingHTTPServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E95D22E1B2B30C2000DD4DA /* RoutingHTTPServer.framework */; };
-		6E95D2481B2B3234000DD4DA /* CocoaAsyncSocket.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6E95D2261B2B30C2000DD4DA /* CocoaAsyncSocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		6E95D2491B2B3234000DD4DA /* CocoaHTTPServer.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6E95D2271B2B30C2000DD4DA /* CocoaHTTPServer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		6E95D24A1B2B3234000DD4DA /* CocoaLumberjack.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6E95D2281B2B30C2000DD4DA /* CocoaLumberjack.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		6E95D24D1B2B3234000DD4DA /* ExSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6E95D22B1B2B30C2000DD4DA /* ExSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		6E95D24E1B2B3234000DD4DA /* IDZSwiftCommonCrypto.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6E95D22C1B2B30C2000DD4DA /* IDZSwiftCommonCrypto.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		6E95D24F1B2B3234000DD4DA /* NetworkObjects.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6E95D22D1B2B30C2000DD4DA /* NetworkObjects.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		6E95D2501B2B3234000DD4DA /* RoutingHTTPServer.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6E95D22E1B2B30C2000DD4DA /* RoutingHTTPServer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		6E95D26F1B2B35D5000DD4DA /* IDZSwiftCommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E95D26E1B2B35D5000DD4DA /* IDZSwiftCommonCrypto.framework */; };
 		6E9821311AE2D5B400D393DF /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9821301AE2D5B400D393DF /* Action.swift */; };
 		6E9821331AE2D5B400D393DF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9821321AE2D5B400D393DF /* User.swift */; };
 		6E9821351AE2D5B500D393DF /* Lock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9821341AE2D5B500D393DF /* Lock.swift */; };
@@ -69,13 +38,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				6E95D2481B2B3234000DD4DA /* CocoaAsyncSocket.framework in CopyFiles */,
-				6E95D2491B2B3234000DD4DA /* CocoaHTTPServer.framework in CopyFiles */,
-				6E95D24A1B2B3234000DD4DA /* CocoaLumberjack.framework in CopyFiles */,
-				6E95D24D1B2B3234000DD4DA /* ExSwift.framework in CopyFiles */,
-				6E95D24E1B2B3234000DD4DA /* IDZSwiftCommonCrypto.framework in CopyFiles */,
-				6E95D24F1B2B3234000DD4DA /* NetworkObjects.framework in CopyFiles */,
-				6E95D2501B2B3234000DD4DA /* RoutingHTTPServer.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,21 +54,6 @@
 		6E4643001AD9E045005BDBA7 /* CoreCerraduraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreCerraduraTests.swift; sourceTree = "<group>"; };
 		6E46431F1AD9E953005BDBA7 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		6E8D77B41AE9DF3C00370898 /* Define.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Define.swift; sourceTree = "<group>"; };
-		6E95D20E1B2B2EBD000DD4DA /* CoreCerradura.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreCerradura.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6E95D21F1B2B30C2000DD4DA /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CocoaAsyncSocket.framework; sourceTree = "<group>"; };
-		6E95D2201B2B30C2000DD4DA /* CocoaHTTPServer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CocoaHTTPServer.framework; sourceTree = "<group>"; };
-		6E95D2211B2B30C2000DD4DA /* CocoaLumberjack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CocoaLumberjack.framework; sourceTree = "<group>"; };
-		6E95D2221B2B30C2000DD4DA /* ExSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ExSwift.framework; sourceTree = "<group>"; };
-		6E95D2231B2B30C2000DD4DA /* NetworkObjects.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NetworkObjects.framework; sourceTree = "<group>"; };
-		6E95D2241B2B30C2000DD4DA /* RoutingHTTPServer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RoutingHTTPServer.framework; sourceTree = "<group>"; };
-		6E95D2261B2B30C2000DD4DA /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CocoaAsyncSocket.framework; sourceTree = "<group>"; };
-		6E95D2271B2B30C2000DD4DA /* CocoaHTTPServer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CocoaHTTPServer.framework; sourceTree = "<group>"; };
-		6E95D2281B2B30C2000DD4DA /* CocoaLumberjack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CocoaLumberjack.framework; sourceTree = "<group>"; };
-		6E95D22B1B2B30C2000DD4DA /* ExSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ExSwift.framework; sourceTree = "<group>"; };
-		6E95D22C1B2B30C2000DD4DA /* IDZSwiftCommonCrypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IDZSwiftCommonCrypto.framework; sourceTree = "<group>"; };
-		6E95D22D1B2B30C2000DD4DA /* NetworkObjects.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NetworkObjects.framework; sourceTree = "<group>"; };
-		6E95D22E1B2B30C2000DD4DA /* RoutingHTTPServer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RoutingHTTPServer.framework; sourceTree = "<group>"; };
-		6E95D26E1B2B35D5000DD4DA /* IDZSwiftCommonCrypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IDZSwiftCommonCrypto.framework; sourceTree = "<group>"; };
 		6E98212E1AE2D5B400D393DF /* Permission.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Permission.swift; sourceTree = "<group>"; };
 		6E9821301AE2D5B400D393DF /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		6E9821321AE2D5B400D393DF /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -119,13 +66,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E95D2351B2B30D6000DD4DA /* CocoaAsyncSocket.framework in Frameworks */,
-				6E95D2361B2B30D6000DD4DA /* CocoaHTTPServer.framework in Frameworks */,
-				6E95D2371B2B30D6000DD4DA /* CocoaLumberjack.framework in Frameworks */,
-				6E95D23A1B2B30D6000DD4DA /* ExSwift.framework in Frameworks */,
-				6E95D23B1B2B30D6000DD4DA /* IDZSwiftCommonCrypto.framework in Frameworks */,
-				6E95D23C1B2B30D6000DD4DA /* NetworkObjects.framework in Frameworks */,
-				6E95D23D1B2B30D6000DD4DA /* RoutingHTTPServer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,20 +74,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E4642FA1AD9E045005BDBA7 /* CoreCerradura.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6E95D2071B2B2EBD000DD4DA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6E95D22F1B2B30CC000DD4DA /* CocoaAsyncSocket.framework in Frameworks */,
-				6E95D26F1B2B35D5000DD4DA /* IDZSwiftCommonCrypto.framework in Frameworks */,
-				6E95D2301B2B30CC000DD4DA /* CocoaHTTPServer.framework in Frameworks */,
-				6E95D2311B2B30CC000DD4DA /* CocoaLumberjack.framework in Frameworks */,
-				6E95D2321B2B30CC000DD4DA /* ExSwift.framework in Frameworks */,
-				6E95D2331B2B30CC000DD4DA /* NetworkObjects.framework in Frameworks */,
-				6E95D2341B2B30CC000DD4DA /* RoutingHTTPServer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,7 +95,6 @@
 			children = (
 				6E4642EE1AD9E045005BDBA7 /* CoreCerradura.framework */,
 				6E4642F91AD9E045005BDBA7 /* CoreCerraduraTests.xctest */,
-				6E95D20E1B2B2EBD000DD4DA /* CoreCerradura.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -216,8 +141,6 @@
 		6E46431D1AD9E10A005BDBA7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6E95D2251B2B30C2000DD4DA /* Mac */,
-				6E95D21E1B2B30C2000DD4DA /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -231,36 +154,6 @@
 				6E98212E1AE2D5B400D393DF /* Permission.swift */,
 			);
 			name = Model;
-			sourceTree = "<group>";
-		};
-		6E95D21E1B2B30C2000DD4DA /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				6E95D26E1B2B35D5000DD4DA /* IDZSwiftCommonCrypto.framework */,
-				6E95D21F1B2B30C2000DD4DA /* CocoaAsyncSocket.framework */,
-				6E95D2201B2B30C2000DD4DA /* CocoaHTTPServer.framework */,
-				6E95D2211B2B30C2000DD4DA /* CocoaLumberjack.framework */,
-				6E95D2221B2B30C2000DD4DA /* ExSwift.framework */,
-				6E95D2231B2B30C2000DD4DA /* NetworkObjects.framework */,
-				6E95D2241B2B30C2000DD4DA /* RoutingHTTPServer.framework */,
-			);
-			name = iOS;
-			path = ../Carthage/Build/iOS;
-			sourceTree = "<group>";
-		};
-		6E95D2251B2B30C2000DD4DA /* Mac */ = {
-			isa = PBXGroup;
-			children = (
-				6E95D2261B2B30C2000DD4DA /* CocoaAsyncSocket.framework */,
-				6E95D2271B2B30C2000DD4DA /* CocoaHTTPServer.framework */,
-				6E95D2281B2B30C2000DD4DA /* CocoaLumberjack.framework */,
-				6E95D22B1B2B30C2000DD4DA /* ExSwift.framework */,
-				6E95D22C1B2B30C2000DD4DA /* IDZSwiftCommonCrypto.framework */,
-				6E95D22D1B2B30C2000DD4DA /* NetworkObjects.framework */,
-				6E95D22E1B2B30C2000DD4DA /* RoutingHTTPServer.framework */,
-			);
-			name = Mac;
-			path = ../Carthage/Build/Mac;
 			sourceTree = "<group>";
 		};
 		6EF11F071AF26D5200A7C4BC /* Functions */ = {
@@ -283,20 +176,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6E95D2081B2B2EBD000DD4DA /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6E95D2091B2B2EBD000DD4DA /* CoreCerradura.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		6E4642ED1AD9E045005BDBA7 /* CoreCerradura OS X */ = {
+		6E4642ED1AD9E045005BDBA7 /* CoreCerradura */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6E4643041AD9E045005BDBA7 /* Build configuration list for PBXNativeTarget "CoreCerradura OS X" */;
+			buildConfigurationList = 6E4643041AD9E045005BDBA7 /* Build configuration list for PBXNativeTarget "CoreCerradura" */;
 			buildPhases = (
 				6E4642E91AD9E045005BDBA7 /* Sources */,
 				6E4642EA1AD9E045005BDBA7 /* Frameworks */,
@@ -307,7 +192,7 @@
 			);
 			dependencies = (
 			);
-			name = "CoreCerradura OS X";
+			name = CoreCerradura;
 			productName = CoreCerradura;
 			productReference = 6E4642EE1AD9E045005BDBA7 /* CoreCerradura.framework */;
 			productType = "com.apple.product-type.framework";
@@ -330,24 +215,6 @@
 			productName = CoreCerraduraTests;
 			productReference = 6E4642F91AD9E045005BDBA7 /* CoreCerraduraTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		6E95D1FC1B2B2EBD000DD4DA /* CoreCerradura iOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6E95D20B1B2B2EBD000DD4DA /* Build configuration list for PBXNativeTarget "CoreCerradura iOS" */;
-			buildPhases = (
-				6E95D1FD1B2B2EBD000DD4DA /* Sources */,
-				6E95D2071B2B2EBD000DD4DA /* Frameworks */,
-				6E95D2081B2B2EBD000DD4DA /* Headers */,
-				6E95D20A1B2B2EBD000DD4DA /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "CoreCerradura iOS";
-			productName = CoreCerradura;
-			productReference = 6E95D20E1B2B2EBD000DD4DA /* CoreCerradura.framework */;
-			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -378,8 +245,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6E4642ED1AD9E045005BDBA7 /* CoreCerradura OS X */,
-				6E95D1FC1B2B2EBD000DD4DA /* CoreCerradura iOS */,
+				6E4642ED1AD9E045005BDBA7 /* CoreCerradura */,
 				6E4642F81AD9E045005BDBA7 /* CoreCerraduraTests */,
 			);
 		};
@@ -394,13 +260,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		6E4642F71AD9E045005BDBA7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6E95D20A1B2B2EBD000DD4DA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -434,28 +293,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6E95D1FD1B2B2EBD000DD4DA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6E95D1FE1B2B2EBD000DD4DA /* User.swift in Sources */,
-				6E95D1FF1B2B2EBD000DD4DA /* Permission.swift in Sources */,
-				6E95D2001B2B2EBD000DD4DA /* Unlock.swift in Sources */,
-				6E95D2011B2B2EBD000DD4DA /* Authentication.swift in Sources */,
-				6E95D2021B2B2EBD000DD4DA /* Define.swift in Sources */,
-				6E95D2031B2B2EBD000DD4DA /* Lock.swift in Sources */,
-				6E95D2041B2B2EBD000DD4DA /* Action.swift in Sources */,
-				6E95D2051B2B2EBD000DD4DA /* Model.xcdatamodeld in Sources */,
-				6E95D2061B2B2EBD000DD4DA /* Archivable.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
 		6E4642FC1AD9E045005BDBA7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6E4642ED1AD9E045005BDBA7 /* CoreCerradura OS X */;
+			target = 6E4642ED1AD9E045005BDBA7 /* CoreCerradura */;
 			targetProxy = 6E4642FB1AD9E045005BDBA7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -504,7 +347,7 @@
 				SDKROOT = macosx;
 				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				VALID_ARCHS = "";
+				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -545,7 +388,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
-				VALID_ARCHS = "";
+				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -561,20 +404,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					$SRCROOT/../Carthage/Build/Mac,
-				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = CoreCerradura/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = CoreCerradura;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_WHOLE_MODULE_OPTIMIZATION = YES;
-				VALID_ARCHS = "i386 x86_64";
 			};
 			name = Debug;
 		};
@@ -588,19 +425,13 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					$SRCROOT/../Carthage/Build/Mac,
-				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = CoreCerradura/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = CoreCerradura;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = macosx;
 				SWIFT_WHOLE_MODULE_OPTIMIZATION = YES;
-				VALID_ARCHS = "i386 x86_64";
 			};
 			name = Release;
 		};
@@ -609,7 +440,7 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(SDKROOT)",
 					"$(inherited)",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -619,8 +450,6 @@
 				INFOPLIST_FILE = CoreCerraduraTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = macosx;
-				VALID_ARCHS = "i386 x86_64";
 			};
 			name = Debug;
 		};
@@ -629,71 +458,12 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(SDKROOT)",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = CoreCerraduraTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = macosx;
-				VALID_ARCHS = "i386 x86_64";
-			};
-			name = Release;
-		};
-		6E95D20C1B2B2EBD000DD4DA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COMBINE_HIDPI_IMAGES = YES;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					$SRCROOT/../Carthage/Build/iOS,
-					/Users/Coleman/Developer/MyProjects/CoreCerradura/Carthage/Build/iOS,
-				);
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = CoreCerradura/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = CoreCerradura;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_WHOLE_MODULE_OPTIMIZATION = YES;
-				VALID_ARCHS = "arm64 armv7 armv7s i386";
-			};
-			name = Debug;
-		};
-		6E95D20D1B2B2EBD000DD4DA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COMBINE_HIDPI_IMAGES = YES;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					$SRCROOT/../Carthage/Build/iOS,
-					/Users/Coleman/Developer/MyProjects/CoreCerradura/Carthage/Build/iOS,
-				);
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = CoreCerradura/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = CoreCerradura;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
-				SWIFT_WHOLE_MODULE_OPTIMIZATION = YES;
-				VALID_ARCHS = "arm64 armv7 armv7s i386";
 			};
 			name = Release;
 		};
@@ -709,7 +479,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6E4643041AD9E045005BDBA7 /* Build configuration list for PBXNativeTarget "CoreCerradura OS X" */ = {
+		6E4643041AD9E045005BDBA7 /* Build configuration list for PBXNativeTarget "CoreCerradura" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6E4643051AD9E045005BDBA7 /* Debug */,
@@ -723,15 +493,6 @@
 			buildConfigurations = (
 				6E4643081AD9E045005BDBA7 /* Debug */,
 				6E4643091AD9E045005BDBA7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6E95D20B1B2B2EBD000DD4DA /* Build configuration list for PBXNativeTarget "CoreCerradura iOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6E95D20C1B2B2EBD000DD4DA /* Debug */,
-				6E95D20D1B2B2EBD000DD4DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
