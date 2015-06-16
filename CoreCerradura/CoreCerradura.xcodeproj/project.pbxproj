@@ -22,6 +22,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		6E0269A91B30A5F90035A643 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E0269A31B30A5F90035A643 /* IDZSwiftCommonCrypto.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0CCB89AB19CE05F800068ED6;
+			remoteInfo = IDZSwiftCommonCrypto;
+		};
+		6E0269AB1B30A5F90035A643 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E0269A31B30A5F90035A643 /* IDZSwiftCommonCrypto.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0CCB89B619CE05F800068ED6;
+			remoteInfo = IDZSwiftCommonCryptoTests;
+		};
 		6E4642FB1AD9E045005BDBA7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6E4642E51AD9E045005BDBA7 /* Project object */;
@@ -44,6 +58,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6E0269A31B30A5F90035A643 /* IDZSwiftCommonCrypto.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = IDZSwiftCommonCrypto.xcodeproj; path = ../IDZSwiftCommonCrypto/IDZSwiftCommonCrypto/IDZSwiftCommonCrypto.xcodeproj; sourceTree = "<group>"; };
 		6E05BD301AF65763008FFF84 /* Authentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
 		6E0AB6701AE5D37500AAAF50 /* Archivable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Archivable.swift; sourceTree = "<group>"; };
 		6E4642EE1AD9E045005BDBA7 /* CoreCerradura.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreCerradura.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +95,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E0269A41B30A5F90035A643 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6E0269AA1B30A5F90035A643 /* IDZSwiftCommonCrypto.framework */,
+				6E0269AC1B30A5F90035A643 /* IDZSwiftCommonCryptoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		6E4642E41AD9E045005BDBA7 = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +165,7 @@
 		6E46431D1AD9E10A005BDBA7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6E0269A31B30A5F90035A643 /* IDZSwiftCommonCrypto.xcodeproj */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -243,6 +268,12 @@
 			mainGroup = 6E4642E41AD9E045005BDBA7;
 			productRefGroup = 6E4642EF1AD9E045005BDBA7 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 6E0269A41B30A5F90035A643 /* Products */;
+					ProjectRef = 6E0269A31B30A5F90035A643 /* IDZSwiftCommonCrypto.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				6E4642ED1AD9E045005BDBA7 /* CoreCerradura */,
@@ -250,6 +281,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		6E0269AA1B30A5F90035A643 /* IDZSwiftCommonCrypto.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = IDZSwiftCommonCrypto.framework;
+			remoteRef = 6E0269A91B30A5F90035A643 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6E0269AC1B30A5F90035A643 /* IDZSwiftCommonCryptoTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = IDZSwiftCommonCryptoTests.xctest;
+			remoteRef = 6E0269AB1B30A5F90035A643 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		6E4642EC1AD9E045005BDBA7 /* Resources */ = {
