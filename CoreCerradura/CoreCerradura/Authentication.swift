@@ -28,11 +28,5 @@ public func GenerateAuthenticationToken(identifier: String, secret: String, cont
     
     let base64Signature = signedKey.base64EncodedStringWithOptions(NSDataBase64EncodingOptions.allZeros)
     
-    let jsonAuthorizationObject = [identifier: base64Signature]
-    
-    let jsonData = NSJSONSerialization.dataWithJSONObject(jsonAuthorizationObject, options: NSJSONWritingOptions.allZeros, error: nil)!
-    
-    let authorizationString = NSString(data: jsonData, encoding: NSUTF8StringEncoding)
-    
-    return authorizationString as! String
+    return "{\(identifier):\(base64Signature)}"
 }
