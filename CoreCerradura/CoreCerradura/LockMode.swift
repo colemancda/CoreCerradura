@@ -7,14 +7,14 @@
 //
 
 /** Modes for the lock device. */
-public enum LockMode: String {
+public enum LockMode {
     
     /** The lock device is in setup mode. */
-    case Setup = "Setup"
+    case Setup
     
     /** The lock device is in command reciever mode. */
-    case CommandReceiver = "CommandReceiver"
+    case CommandReceiver
     
     /** The lock device is in fatal error mode. */
-    case FatalError = "FatalError"
+    case FatalError
 }
