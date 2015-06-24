@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6E05BD311AF65763008FFF84 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E05BD301AF65763008FFF84 /* Authentication.swift */; };
+		6E05BD311AF65763008FFF84 /* AuthenticationToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E05BD301AF65763008FFF84 /* AuthenticationToken.swift */; };
 		6E0AB66E1AE4502D00AAAF50 /* Permission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E98212E1AE2D5B400D393DF /* Permission.swift */; };
 		6E0AB6711AE5D37500AAAF50 /* Archivable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0AB6701AE5D37500AAAF50 /* Archivable.swift */; };
 		6E4642F41AD9E045005BDBA7 /* CoreCerradura.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E4642F31AD9E045005BDBA7 /* CoreCerradura.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -34,7 +34,7 @@
 		6E95D1FE1B2B2EBD000DD4DA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9821321AE2D5B400D393DF /* User.swift */; };
 		6E95D1FF1B2B2EBD000DD4DA /* Permission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E98212E1AE2D5B400D393DF /* Permission.swift */; };
 		6E95D2001B2B2EBD000DD4DA /* Unlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF11F051AF2670100A7C4BC /* Unlock.swift */; };
-		6E95D2011B2B2EBD000DD4DA /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E05BD301AF65763008FFF84 /* Authentication.swift */; };
+		6E95D2011B2B2EBD000DD4DA /* AuthenticationToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E05BD301AF65763008FFF84 /* AuthenticationToken.swift */; };
 		6E95D2021B2B2EBD000DD4DA /* Define.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8D77B41AE9DF3C00370898 /* Define.swift */; };
 		6E95D2031B2B2EBD000DD4DA /* Lock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9821341AE2D5B500D393DF /* Lock.swift */; };
 		6E95D2041B2B2EBD000DD4DA /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9821301AE2D5B400D393DF /* Action.swift */; };
@@ -93,7 +93,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		6E05BD301AF65763008FFF84 /* Authentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
+		6E05BD301AF65763008FFF84 /* AuthenticationToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationToken.swift; sourceTree = "<group>"; };
 		6E0AB6701AE5D37500AAAF50 /* Archivable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Archivable.swift; sourceTree = "<group>"; };
 		6E4642EE1AD9E045005BDBA7 /* CoreCerradura.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreCerradura.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E4642F21AD9E045005BDBA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -245,7 +245,7 @@
 		6E7474701B3B0AC60039596D /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
-				6E05BD301AF65763008FFF84 /* Authentication.swift */,
+				6E05BD301AF65763008FFF84 /* AuthenticationToken.swift */,
 				6E7474711B3B0AD80039596D /* AuthenticationContext.swift */,
 				6E7474721B3B0AD80039596D /* HTTPAuthenticationContext.swift */,
 			);
@@ -441,7 +441,7 @@
 				6E7474751B3B0AD80039596D /* HTTPAuthenticationContext.swift in Sources */,
 				6E74746E1B3B0AAB0039596D /* RequestHeader.swift in Sources */,
 				6EF11F061AF2670100A7C4BC /* Unlock.swift in Sources */,
-				6E05BD311AF65763008FFF84 /* Authentication.swift in Sources */,
+				6E05BD311AF65763008FFF84 /* AuthenticationToken.swift in Sources */,
 				6E8D77B51AE9DF3C00370898 /* Define.swift in Sources */,
 				6E9821351AE2D5B500D393DF /* Lock.swift in Sources */,
 				6E9821311AE2D5B400D393DF /* Action.swift in Sources */,
@@ -473,7 +473,7 @@
 				6E7474761B3B0AD80039596D /* HTTPAuthenticationContext.swift in Sources */,
 				6E74746F1B3B0AAB0039596D /* RequestHeader.swift in Sources */,
 				6E95D2001B2B2EBD000DD4DA /* Unlock.swift in Sources */,
-				6E95D2011B2B2EBD000DD4DA /* Authentication.swift in Sources */,
+				6E95D2011B2B2EBD000DD4DA /* AuthenticationToken.swift in Sources */,
 				6E95D2021B2B2EBD000DD4DA /* Define.swift in Sources */,
 				6E95D2031B2B2EBD000DD4DA /* Lock.swift in Sources */,
 				6E95D2041B2B2EBD000DD4DA /* Action.swift in Sources */,

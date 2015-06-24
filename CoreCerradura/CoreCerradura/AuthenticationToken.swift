@@ -1,5 +1,5 @@
 //
-//  Authentication.swift
+//  AuthenticationToken.swift
 //  CoreCerradura
 //
 //  Created by Alsey Coleman Miller on 5/3/15.
