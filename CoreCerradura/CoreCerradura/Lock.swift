@@ -90,12 +90,3 @@ public class Lock: NSManagedObject, Archivable {
     }
 }
 
-// MARK: - Enumerations
-
-public enum LockModel: String {
-    
-    case Simulator = "Simulator"
-    case Edison = "Edison"
-    case Chip = "Chip"
-}
-

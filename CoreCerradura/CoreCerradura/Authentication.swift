@@ -9,18 +9,16 @@
 import Foundation
 import IDZSwiftCommonCrypto
 
-// MARK: - Functions
-
-/// Generates the authorization header used for authenticating HTTP requests.
+/// Generates the authentication token used for authenticating requests.
+/// Modeled after [AWS](http://docs.aws.amazon.com/AmazonS3/latest/dev/RESTAuthentication.html#UsingTemporarySecurityCredentials)
 ///
-/// :param: identifier The identifier (resource ID or username) of the entity trying to authenticate.
-/// :param: secret The secret (e.g. password) of the entity trying to authenticate.
-/// :param: context The authentication context info. 
+/// - Parameter identifier: The identifier (e.g. resource ID or username) of the entity trying to authenticate.
+/// - Parameter secret: The secret (e.g. password) of the entity trying to authenticate.
+/// - Parameter context: The authentication context info.
+/// - Returns: The generated authentication token.
 public func GenerateAuthenticationToken(identifier: String, secret: String, context: AuthenticationContext) -> String {
     
-    // Modeled after AWS http://docs.aws.amazon.com/AmazonS3/latest/dev/RESTAuthentication.html#UsingTemporarySecurityCredentials
-    
-    let stringToSign = context.verb + context.path + context.dateString
+    let stringToSign = context.concatenatedString
     
     let secretData = (secret as NSString).dataUsingEncoding(NSUTF8StringEncoding)!
     
@@ -37,27 +35,4 @@ public func GenerateAuthenticationToken(identifier: String, secret: String, cont
     let authorizationString = NSString(data: jsonData, encoding: NSUTF8StringEncoding)
     
     return authorizationString as! String
-}
-
-// MARK: - Enumerations
-
-/** Provides the context for authorization. Public information only. */
-public struct AuthenticationContext {
-    
-    // MARK: - Properties
-    
-    public let verb: String
-    
-    public let path: String
-    
-    public let dateString: String
-    
-    // MARK: - Initialization
-    
-    public init(verb: String, path: String, dateString: String) {
-        
-        self.verb = verb
-        self.path = path
-        self.dateString = dateString
-    }
 }
