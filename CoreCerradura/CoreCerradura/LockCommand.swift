@@ -9,7 +9,13 @@
 /** Encapsulates a lock command. */
 public struct LockCommand {
     
-    public let shouldUnlock = false
+    public let shouldUnlock: Bool
     
-    public let shouldUpdate = false
+    public let shouldUpdate: Bool
+    
+    public init(shouldUnlock: Bool = false, shouldUpdate: Bool = false) {
+        
+        self.shouldUnlock = shouldUnlock
+        self.shouldUpdate = shouldUpdate
+    }
 }

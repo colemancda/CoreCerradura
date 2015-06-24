@@ -20,6 +20,15 @@ public struct HTTPAuthenticationContext: AuthenticationContext {
     /** The string of the date of the request. */
     public let dateString: String
     
+    // MARK: - Initialization
+    
+    public init(verb: String, path: String, dateString: String) {
+        
+        self.verb = verb
+        self.path = path
+        self.dateString = dateString
+    }
+    
     // MARK: - AuthenticationContext
     
     public var concatenatedString: String {
