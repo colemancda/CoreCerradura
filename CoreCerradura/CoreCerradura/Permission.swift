@@ -121,12 +121,12 @@ public class Permission: NSManagedObject, Archivable {
 
 public enum PermissionType: String {
     
-    /** Admin permissions have unlimited access and can distribute keys. */
-    case Admin = "admin"
+    /// Admin permissions have unlimited access and can distribute keys.
+    case Admin
     
-    /* Anytime permissions have unlimited access but cannot distribute keys. */
-    case Anytime = "anytime"
+    /// Anytime permissions have unlimited access but cannot distribute keys.
+    case Anytime
     
-    /** Schduled permissions have access during certain hours and can expire. */
-    case Scheduled = "scheduled"
+    //// Schduled permissions have access during certain hours and can expire.
+    case Scheduled
 }

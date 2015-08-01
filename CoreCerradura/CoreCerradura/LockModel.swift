@@ -10,11 +10,13 @@
 public enum LockModel: String {
     
     /** Simulator model. Used in development. */
-    case Simulator = "Simulator"
+    case Simulator
     
     /** Lock model based on Intel Edison board. */
-    case Edison = "Edison"
+    case Edison
     
     /** Lock model based on C.H.I.P. board. */
-    case Chip = "Chip"
+    case Chip
+    
+    case Beaglebone
 }

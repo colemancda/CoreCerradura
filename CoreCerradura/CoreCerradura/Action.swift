@@ -27,7 +27,7 @@ public class Action: NSManagedObject {
     
     // MARK: Relationships
     
-    /** The lock associated with this action. */
+    /// The lock associated with this action. */
     @NSManaged public var lock: Lock?
     
     /** The user associated with this action. */
@@ -52,24 +52,24 @@ public class Action: NSManagedObject {
 public enum ActionType: String {
     
     /** A new entity was created. */
-    case New = "new"
+    case New
     
     /** An entity has been archived / invalidated. */
-    case Archived = "archived"
+    case Archived
     
     /** A lock was unlocked. */
-    case Unlock = "unlock"
+    case Unlock
 }
 
 /** Specifies the status of the action. */
 public enum ActionStatus: String {
     
     /** Action completed. Default value. */
-    case Completed = "completed"
+    case Completed
     
     /** Action is pending completion. */
-    case Pending = "pending"
+    case Pending
     
     /** Action expired. */
-    case Expired = "expired"
+    case Expired
 }
